@@ -6,4 +6,4 @@
 
 **Blabla:** Je n'ai pas réellement coder car j'ai récupéré le framework qui propose un workflow. Je dois l'adapter à ma base CSS, et poursuivre la rédaction de la doc.
 
-**Lien vers le projet:** [Emails Workflow](/tree/master/projects/emails-workflow)
+**Lien vers le projet:** [Emails Workflow](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/emails-workflow)
