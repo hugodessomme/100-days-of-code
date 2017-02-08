@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Slider jQuery</title>
+	<script 
+		src="https://code.jquery.com/jquery-3.1.1.min.js" 
+		integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  		crossorigin="anonymous">
+	</script>
+	<script src="slider.js"></script>
+	<style>
+		/* Base CSS */
+		.container { 
+			position: relative;
+			width: 500px;
+			margin: 100px auto;
+			border: 2px solid #ccc;
+		}
+		.slider {
+			position: relative;
+			display: block;
+			height: 300px;
+			overflow: hidden;
+		}
+		.slider__list {
+			width: 1500px;
+			margin: 0; padding: 0;
+			list-style: none;
+		}
+		.slider__item {
+			float: left;
+			width:500px; height: 300px;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<div class="slider" data-fn="slider">
+			<ul class="slider__list">
+				<li class="slider__item"><img src="http://lorempixel.com/500/300/business" alt=""></li>
+				<li class="slider__item"><img src="http://lorempixel.com/500/300/nightlife" alt=""></li>
+				<li class="slider__item"><img src="http://lorempixel.com/500/300/sports" alt=""></li>
+			</ul>
+		</div>
+	</div>
+</body>
+</html>
