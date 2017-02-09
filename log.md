@@ -1,6 +1,14 @@
 # 100 Days Of Code - Log
 
-### Day 1: 7 février 2017
+### Jour 2: 8 février 2017
+
+**Progrès du jour**: Démarrage d'un slider en jQuery
+
+**Blabla:** J'ajoute au précédent projet (emails workflow), ce projet qui me permet de coder également. J'ai compris la logique d'animation de chaque slide.
+
+**Lien vers le projet:** [Slider jQuery](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/slider-jquery)
+
+### Jour 1: 7 février 2017
 
 **Progrès du jour**: Mise en place d'une base de workflow d'emails
 
