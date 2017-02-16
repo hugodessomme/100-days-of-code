@@ -1,6 +1,14 @@
 # 100 Days Of Code - Log
 
-### Jour 2: 8 février 2017
+### Jour 3/4 : 16 février 2017
+
+**Progrès du jour**: Démarrage d'un slider en jQuery
+
+**Blabla:** Après une coupure, je reprends le code du slider en y ajoutant l'état actif de l'item visible. Cela fonctionne correctement au 1er cycle mais pas arrivé lorsque l'on retourne au début.
+
+**Lien vers le projet:** [Slider jQuery](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/slider-jquery)
+
+### Jour 2 : 8 février 2017
 
 **Progrès du jour**: Démarrage d'un slider en jQuery
 
@@ -8,7 +16,7 @@
 
 **Lien vers le projet:** [Slider jQuery](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/slider-jquery)
 
-### Jour 1: 7 février 2017
+### Jour 1 : 7 février 2017
 
 **Progrès du jour**: Mise en place d'une base de workflow d'emails
 
