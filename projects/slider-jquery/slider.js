@@ -1,23 +1,31 @@
 $(document).ready(function(){
 
-	function slider(delay) {
+	function slider(delay, transitionSpeed) {
 		$('[data-fn="slider"]').each(function(){
 			var $this = $(this),
 				$list = $this.find('.slider__list'),
-				$item = $this.find('.slider__item');			
-				delay = delay === undefined ? 1000 : delay;
+				$items = $this.find('.slider__item'),
+				itemWidth = $items.width(),
+				counter = 1;				
+
+				slideSpeed = delay === undefined ? 1000 : delay,
+				transitionSpeed = transitionSpeed === undefined ? 500 : transitionSpeed;
 
 
 			// Initialization
-			$list.width($item.width() * $item.length);
+			$list.width(itemWidth * $items.length);
 
-			setInterval(function(){
-				$('.slider__list').animate({
-					'margin-left': '-=500'
+			setInterval(function(){				
+				$list.animate({
+
+					'margin-left': '-='+itemWidth
+
+				}, transitionSpeed, function(){				
+
 				});
 			}, delay);
 		});
 	}
 
-	slider(2000);
+	slider(3000, 1000);
 });
