@@ -1,2 +1,5 @@
 .DS_Store
 node_modules
+
+# Wordpress project
+/projects/wordpress/wp-config.php
