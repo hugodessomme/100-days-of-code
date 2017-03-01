@@ -1,10 +1,20 @@
 # 100 Days Of Code - Log
 
+### Jour 6 : 28 février 2017
+
+**Progrès du jour** : Installation de Wordpress
+
+**Blabla** : J'ai installé Wordpress en local, j'avais déjà fais du Wordpress quelques années auparavant, et l'installation est encore plus simple maintenant.
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
 ### Jour 5 : 26 février 2017
 
 **Progrès du jour** : Initiation au développement de thèmes Wordpress
 
 **Blabla** : Pour l'évolution d'un projet personnel, je me lance dans le développement de thèmex Wordpress pour être autonome sur ce sujet. Je me base sur la [documentation Wordpress officielle](https://developer.wordpress.org/themes/).
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
 
 ### Jour 3/4 : 16 février 2017
 
