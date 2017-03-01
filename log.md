@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 7 : 1 mars 2017
+
+**Progrès du jour** : Création d'un thème from scratch
+
+**Blabla** : J'ai commencé la lecture pour la création d'un thème Wordpress from scratch, et j'ai initialisé mon thème "Newbies".
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
 ### Jour 6 : 28 février 2017
 
 **Progrès du jour** : Installation de Wordpress
