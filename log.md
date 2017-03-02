@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 8 : 2 mars 2017
+
+**Progrès du jour** : Décomposition du thème suivant l'architecture Wordpress
+
+**Blabla** : J'ai placé dans les fichiers adéquats les différentes parties de ma page d'accueil (header, footer, content, sidebar)
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
 ### Jour 7 : 1 mars 2017
 
 **Progrès du jour** : Création d'un thème from scratch
