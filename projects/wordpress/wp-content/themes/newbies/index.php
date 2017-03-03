@@ -8,8 +8,18 @@
         	
         		get_template_part( 'content', get_post_format() );
 
-    		endwhile; endif; 
-		?>
+    		endwhile; 
+        ?>
+
+        <!-- Pagination  -->
+        <nav>
+            <ul class="pager">
+                <li><?php previous_posts_link('Précédent'); ?></li>
+                <li><?php next_posts_link('Suivant'); ?></li>
+            </ul>
+        </nav>
+
+        <?php endif; ?>
 
     </div><!-- /.blog-main -->
 
