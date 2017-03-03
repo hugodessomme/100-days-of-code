@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 9 : 3 mars 2017
+
+**Progrès du jour** : Détail d'un post, pagination et commentaires sours Wordpress
+
+**Blabla** : Mon thème propose maintenant les fonctionnalités de base pour un blog, je suis surpris de la facilité de création de ces fonctionnalités, excepté pour les commentaires où le code est plus lourd.
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
+
 ### Jour 8 : 2 mars 2017
 
 **Progrès du jour** : Décomposition du thème suivant l'architecture Wordpress
@@ -7,6 +17,8 @@
 **Blabla** : J'ai placé dans les fichiers adéquats les différentes parties de ma page d'accueil (header, footer, content, sidebar)
 
 **Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
 
 ### Jour 7 : 1 mars 2017
 
@@ -16,6 +28,9 @@
 
 **Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
 
+
+
+
 ### Jour 6 : 28 février 2017
 
 **Progrès du jour** : Installation de Wordpress
@@ -23,6 +38,9 @@
 **Blabla** : J'ai installé Wordpress en local, j'avais déjà fais du Wordpress quelques années auparavant, et l'installation est encore plus simple maintenant.
 
 **Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
+
 
 ### Jour 5 : 26 février 2017
 
@@ -32,6 +50,9 @@
 
 **Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
 
+
+
+
 ### Jour 3/4 : 16 février 2017
 
 **Progrès du jour** : Démarrage d'un slider en jQuery
@@ -40,6 +61,9 @@
 
 **Lien vers le projet** : [Slider jQuery](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/slider-jquery)
 
+
+
+
 ### Jour 2 : 8 février 2017
 
 **Progrès du jour** : Démarrage d'un slider en jQuery
@@ -47,6 +71,9 @@
 **Blabla:** J'ajoute au précédent projet (emails workflow), ce projet qui me permet de coder également. J'ai compris la logique d'animation de chaque slide.
 
 **Lien vers le projet** : [Slider jQuery](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/slider-jquery)
+
+
+
 
 ### Jour 1 : 7 février 2017
 
