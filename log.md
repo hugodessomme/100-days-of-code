@@ -1,8 +1,18 @@
 # 100 Days Of Code - Log
 
+### Jour 10 : 5 mars 2017
+
+**Progrès du jour** : Ajout de fonctions Wordpress
+
+**Blabla** : J'ai commencé à intégrer des fonctions à mon thème pour insérer plus proprement les assets. Le titre de chaque page est désormais unique.
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
+
 ### Jour 9 : 3 mars 2017
 
-**Progrès du jour** : Détail d'un post, pagination et commentaires sours Wordpress
+**Progrès du jour** : Détail d'un post, pagination et commentaires sous Wordpress
 
 **Blabla** : Mon thème propose maintenant les fonctionnalités de base pour un blog, je suis surpris de la facilité de création de ces fonctionnalités, excepté pour les commentaires où le code est plus lourd.
 
