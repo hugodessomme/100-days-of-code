@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 11 : 11 mars 2017
+
+**Progrès du jour** : Ajout d'un menu personnalisé et d'une image à la Une
+
+**Blabla** : La création d'un menu personnalisé est relativement simple, mais je vais étudier la doc pour bien comprendre le fonctionnement. Par contre, l'ajout d'une image associée au post est très simple.
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
+
 ### Jour 10 : 5 mars 2017
 
 **Progrès du jour** : Ajout de fonctions Wordpress
