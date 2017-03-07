@@ -9,4 +9,11 @@
             <?php wp_get_archives( 'type=monthly' ) ?>
         </ol>
     </div>
+    <div class="sidebar-module">
+        <h4>Liens</h4>
+        <ul clas="list-unstyled">
+            <li><a href="<?php echo get_option('github'); ?>">Github</a></li>
+            <li><a href="<?php echo get_option('twitter'); ?>">Twitter</a></li>
+        </ul>
+    </div>
 </div><!-- /.blog-sidebar -->
