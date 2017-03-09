@@ -1,6 +1,16 @@
 # 100 Days Of Code - Log
 
-### Jour 11 : 11 mars 2017
+### Jour 12 : 9 mars 2017
+
+**Progrès du jour** : Ajout d'un custom post type
+
+**Blabla** : J'ai pu ajouter un basique custom post type à mon thème, je vais étudier la doc pour voir les possibilités de personnalisation.
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
+
+### Jour 11 : 7 mars 2017
 
 **Progrès du jour** : Ajout d'un menu personnalisé et d'une image à la Une
 
