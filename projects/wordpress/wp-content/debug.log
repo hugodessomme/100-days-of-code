@@ -5,3 +5,6 @@
 [06-Mar-2017 08:01:24 UTC] PHP Fatal error:  Call to undefined function settings_field() in /Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/wordpress/wp-content/themes/newbies/functions.php on line 36
 [07-Mar-2017 12:33:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/wordpress/wp-content/themes/newbies/functions.php on line 75
 [07-Mar-2017 12:33:14 UTC] PHP Parse error:  syntax error, unexpected ')' in /Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/wordpress/wp-content/themes/newbies/functions.php on line 75
+[09-Mar-2017 07:47:28 UTC] PHP Parse error:  syntax error, unexpected ''public'' (T_CONSTANT_ENCAPSED_STRING), expecting ')' in /Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/wordpress/wp-content/themes/newbies/functions.php on line 87
+[09-Mar-2017 08:01:50 UTC] PHP Fatal error:  Call to undefined function get_coments_number() in /Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/wordpress/wp-content/themes/newbies/single.php on line 11
+[09-Mar-2017 08:03:07 UTC] PHP Fatal error:  Call to undefined function get_coments_number() in /Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/wordpress/wp-content/themes/newbies/single.php on line 11

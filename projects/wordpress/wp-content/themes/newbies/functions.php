@@ -73,4 +73,26 @@ function custom_settings_page_setup()
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
-
+// Custom post type
+function custom_post_type()
+{
+	register_post_type( 
+		'my-custom-post-type',
+		array(
+			'labels' => array(
+				'name' => __( 'My Custom Post' ),
+				'singular_name' => __( 'My Custom post' )
+			),
+			'menu_icon' => 'dashicons-carrot',
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array(
+				'title', 
+				'editor',
+				'thumbnail',
+				'custom-fields'
+			)
+		) 
+	);
+}
+add_action( 'init', 'custom_post_type');
