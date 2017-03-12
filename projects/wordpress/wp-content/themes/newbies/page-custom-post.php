@@ -2,18 +2,25 @@
 
 <div class="row">
 	<div class="col-sm-12">
+		<?php 
+		while( have_posts() ) : the_post();		
+			the_content();
+		endwhile;
+		?>
 
 		<?php
 			// Custom Post Type Loop
 			$args = array(
-						'post-type' => 'my_custom_post_type',
+						'post_type' => 'custom_post',
 						'order_by' => 'menu_order',
 						'order' => 'ASC'
 					);
-			$custom_query = new WP_Query( $args );			
+			$query = new WP_Query( $args );			
 		?>
 		
-		<?php while( $custom_query->have_posts() ) : $custom_query->the_post();	?>
+		<?php 
+		while( $query->have_posts() ) : $query->the_post();	
+		?>
 	
 			<div class="blog-post">
 				<h2 class="blog-post-title">
@@ -22,7 +29,9 @@
 				<?php the_excerpt(); ?>
 			</div>
 
-		<?php endwhile; ?>
+		<?php 
+		endwhile; 
+		?>
 
 	</div>
 </div>

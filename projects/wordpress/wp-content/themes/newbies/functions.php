@@ -9,19 +9,27 @@ function startwordpress_scripts()
 }
 add_action( 'wp_enqueue_scripts', 'startwordpress_scripts' );
 
+
+
 // Add Google Fonts
 function startwordpress_google_fonts() 
 {
 		wp_register_style('OpenSans', 'http://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800');
 		wp_enqueue_style( 'OpenSans');
 }
-add_action('wp_print_styles', 'startwordpress_google_fonts');
+add_action( 'wp_print_styles', 'startwordpress_google_fonts' );
+
+
 
 // Wordpress Title
 add_theme_support( 'title-tag' );
 
+
+
 // Support Featured Images
 add_theme_support( 'post-thumbnails' );
+
+
 
 // Custom menu
 // 1.Add a menu in admin
@@ -73,15 +81,17 @@ function custom_settings_page_setup()
 }
 add_action( 'admin_init', 'custom_settings_page_setup' );
 
+
+
 // Custom post type
-function custom_post_type()
+function custom_post()
 {
 	register_post_type( 
-		'my-custom-post-type',
+		'custom_post',
 		array(
 			'labels' => array(
-				'name' => __( 'My Custom Post' ),
-				'singular_name' => __( 'My Custom post' )
+				'name' => __( 'Custom Post' ),
+				'all_items' => __( 'Tous les Custom Post' )
 			),
 			'menu_icon' => 'dashicons-carrot',
 			'public' => true,
@@ -95,4 +105,60 @@ function custom_post_type()
 		) 
 	);
 }
-add_action( 'init', 'custom_post_type');
+add_action( 'init', 'custom_post' ); 
+
+
+
+
+// Custom post type for custom fields
+function custom_post_fields()
+{
+	register_post_type( 
+		'custom_post_fields',
+		array(
+			'labels' => array(
+				'name' => __( 'Custom post fields' ),
+				'all_items' => __(' Tous les Custom Post Fields')
+			),
+			'public' => true,
+			'has_archive' => true,
+			'supports' => array(
+				'title', 
+				'editor',
+				'excerpt',
+				'thumbnail'
+			),
+			'taxonomies' => array(
+				'post_tag',
+				'category'
+			)
+		) 
+	);
+	register_taxonomy_for_object_type( 'post_tag', 'custom_post_fields' );
+	register_taxonomy_for_object_type( 'category', 'custom_post_fields' );
+}
+add_action( 'init', 'custom_post_fields' );
+
+
+
+// Add meta box
+function metabox_custom_post_fields()
+{
+	add_meta_box(
+		'meta_box', // $id
+		'Meta Box', // $title
+		'show_metabox_custom_post_fields', // $callback
+		'custom_post_fields', // $screen
+		'normal', // $context
+		'high' // $priority
+	);
+}
+function show_metabox_custom_post_fields()
+{
+	global $post;
+	$meta = get_post_meta( $post-> ID, 'meta_box', true); ?>
+
+	<input type="hidden" name="your_meta_box_nonce" value="<?php echo wp_create_nonce( basename(__FILE__) ); ?>">
+
+<?php }
+add_action( 'add_meta_boxes', 'metabox_custom_post_fields' );
