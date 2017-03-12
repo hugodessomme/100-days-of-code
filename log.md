@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 13 : 12 mars 2017
+
+**Progrès du jour** : Ajout d'un custom post type pour metabox
+
+**Blabla** : Je suis en train de développer un nouveau custom post type afin d'y insérer une métabox. C'est assez simple désormais d'ajouter un custom post type, mais le code de l'ajout d'une métabox est plus complexe.
+
+**Lien vers le projet** : [Wordpress](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/wordpress)
+
+
+
 ### Jour 12 : 9 mars 2017
 
 **Progrès du jour** : Ajout d'un custom post type
