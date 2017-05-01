@@ -11,7 +11,7 @@ Bac à simple de mon apprentissage du langage PHP.
 ## Done!
 
 - `form-files` : Envoi d'un fichier via un formulaire et le sauvegarde en local
-- `login` : Authnetification par mot de passe (sur une autre page et sur la même page)
+- `login` : Authentification par mot de passe (sur une autre page et sur la même page)
 
 ## Todo
 
