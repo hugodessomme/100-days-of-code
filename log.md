@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 14/15/16/17 : 1 mai 2017
+
+**Progrès du jour** : Apprentissage du PHP
+
+**Blabla** : Après une assez longue pause, je me remets dans l'apprentissage du développement, en m'orientant plutôt vers le PHP. Je compte poursuivre mes efforts sur Wordpress, mais j'ai toujours voulu aussi progressé en PHP. Peut-être que je cumulerai ces deux compétences dans les jours à venir.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 13 : 12 mars 2017
 
 **Progrès du jour** : Ajout d'un custom post type pour metabox
