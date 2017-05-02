@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 18 : 2 mai 2017
+
+**Progrès du jour** : Sessions et cookies
+
+**Blabla** : Je pense que je n'ai que survolé ce sujet mais je pourrai l'approfondir lorsque j'aurai un cas concret. Néanmoins, c'est un aspect essentiel dans le développement, je dois donc le garder de côté.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 14/15/16/17 : 1 mai 2017
 
 **Progrès du jour** : Apprentissage du PHP
