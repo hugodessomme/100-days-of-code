@@ -3,3 +3,6 @@ node_modules
 
 # Wordpress project
 projects/wordpress/wp-config.php
+
+# PHP for Newbies project
+projects/php-for-newbies/index.php
