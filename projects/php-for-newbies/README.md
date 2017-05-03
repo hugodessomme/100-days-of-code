@@ -12,6 +12,8 @@ Bac à simple de mon apprentissage du langage PHP.
 
 - `form-files` : Envoi d'un fichier via un formulaire et le sauvegarde en local
 - `login` : Authentification par mot de passe (sur une autre page et sur la même page)
+- `sessions-cookies` : Paramétrage de sessions et cookies
+- `file-writing` : Lecture et écriture dans un fichier
 
 ## Todo
 
