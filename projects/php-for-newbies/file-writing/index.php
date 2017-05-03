@@ -1,5 +1,5 @@
 <?php
-	// Open the file
+	// Ouvre le fichier
 	/**
 	 * r : Lecture seule
 	 * r+ : Lecture et écriture
@@ -13,7 +13,7 @@
 	fseek($counter, 0); // Retourne en début de fichier et écrase la denrière valeur
 	fputs($counter, $view); // Ecrit dans le fichier
 
-	// Close the file
+	// Ferme le fichier
 	fclose($counter);
 
 	echo "Statistics: " . $view;
