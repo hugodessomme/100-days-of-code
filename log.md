@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 19 : 3 mai 2017
+
+**Progrès du jour** : Lecture et écriture de fichier
+
+**Blabla** : Je suis arrivé au bout des bases de PHP du tutoriel, en terminant par la lecture/écriture dans un fichier. Mes connaissances sur ce sujet sont très basiques, je pense qu'il faudra que j'y revienne.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 18 : 2 mai 2017
 
 **Progrès du jour** : Sessions et cookies

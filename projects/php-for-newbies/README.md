@@ -16,3 +16,4 @@ Bac à simple de mon apprentissage du langage PHP.
 ## Todo
 
 - [Approfondir le développement d'un envoi de fichier via un formulaire](https://huit.re/form-files-2)
+- Approfondir la lecture / écriture de fichier
