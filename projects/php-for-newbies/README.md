@@ -14,6 +14,7 @@ Bac à simple de mon apprentissage du langage PHP.
 - `login` : Authentification par mot de passe (sur une autre page et sur la même page)
 - `sessions-cookies` : Paramétrage de sessions et cookies
 - `file-writing` : Lecture et écriture dans un fichier
+- `mysql` : requêtes SQL + exercice de formulaire de recherche simple
 
 ## Todo
 

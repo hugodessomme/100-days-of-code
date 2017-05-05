@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 20 : 5 mai 2017
+
+**Progrès du jour** : Requêtes SQL
+
+**Blabla** : Mes premiers pas dans les requêtes à une BDD. Je me suis imposé un exercice qui était de réaliser un formulaire simple de recherche avec une requête préparée. J'ai réussi relativement rapidement et j'en suis content. Je commence à mettre en application concrète ce que j'apprends.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
 
 
 ### Jour 19 : 3 mai 2017
