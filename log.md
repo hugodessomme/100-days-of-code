@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 21 : 8 mai 2017
+
+**Progrès du jour** : TP minichat
+
+**Blabla** : J'ai codé un système de minichat simple, qui a mêlé ce que j'avais vu sur les requêtes SQL (affichage, ajout), et la transmission de données par formulaire. Cela reste des fonctionnalités basiques, mais j'ai bien compris comment les manipuler !
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 20 : 5 mai 2017
 
 **Progrès du jour** : Requêtes SQL
