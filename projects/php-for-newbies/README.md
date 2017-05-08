@@ -14,8 +14,9 @@ Bac à simple de mon apprentissage du langage PHP.
 - `login` : Authentification par mot de passe (sur une autre page et sur la même page)
 - `sessions-cookies` : Paramétrage de sessions et cookies
 - `file-writing` : Lecture et écriture dans un fichier
-- `mysql-read` : requêtes SQL pour afficher des entrées de la BDD + exercice de formulaire de recherche simple
-- `mysql-write` : requêtes SQL pour configurer des entrées (ajout, modification, suppression)
+- `mysql-read` : Requêtes SQL pour afficher des entrées de la BDD + exercice de formulaire de recherche simple
+- `mysql-write` : Requêtes SQL pour configurer des entrées (ajout, modification, suppression)
+- `minichat` : TP d'un minichat
 
 ## Todo
 
