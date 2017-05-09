@@ -2,7 +2,7 @@
 
 > *Projet réalisé dans le cadre du [100 Days of Code Challenge](https://github.com/hugodessomme/100-days-of-code).*
 
-Bac à simple de mon apprentissage du langage PHP.
+Bac à sable de mon apprentissage du langage PHP.
 
 ## Tutoriels
 
