@@ -17,6 +17,7 @@ Bac à sable de mon apprentissage du langage PHP.
 - `mysql-read` : Requêtes SQL pour afficher des entrées de la BDD + exercice de formulaire de recherche simple
 - `mysql-write` : Requêtes SQL pour configurer des entrées (ajout, modification, suppression)
 - `minichat` : TP d'un minichat
+- `sql-functions` : Liste de fonctions SQL
 
 ## Todo
 
