@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 22 : 26 mai 2017
+
+**Progrès du jour** : Reprise du PHP
+
+**Blabla** : Après une pause, je reprends mon apprentissage. J'ai refais le précédent TP, et j'ai poursuivi sur les fonctions SQL.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 21 : 8 mai 2017
 
 **Progrès du jour** : TP minichat
