@@ -10,7 +10,7 @@
 	try {
 		$bdd = new PDO('mysql:host=localhost;dbname=github-php-for-newbies;charset=utf8', 'root', 'root');
 	}
-	catch(Execption $e) {
+	catch(Exception $e) {
 		die('Erreur : ' . $e->getMessage());
 	}
 
@@ -20,8 +20,8 @@
 		$message = htmlspecialchars($_POST['message']); // Contre la faille XSS
 
 		$query = $bdd->prepare('
-			INSERT INTO minichat(pseudo, message)
-			VALUES (:pseudo, :message)
+			INSERT INTO minichat(pseudo, message, date_publication)
+			VALUES (:pseudo, :message, NOW())
 		');
 		$query->execute(array(
 			'pseudo' => $pseudo,
