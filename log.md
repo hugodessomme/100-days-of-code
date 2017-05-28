@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 23 : 28 mai 2017
+
+**Progrès du jour** : Un blog from scratch
+
+**Blabla** : J'ai pu monter un blog avec des fonctionnalités basiques (affichage d'articles avec commentaires, et interface d'administration). J'ai réussi plus rapidement que ce que je pensais, et je vais reprendre mes acquis pour mon blog personnel.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 22 : 26 mai 2017
 
 **Progrès du jour** : Reprise du PHP
