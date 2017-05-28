@@ -18,6 +18,5 @@
 		'commentaire' => $_POST['commentaire']
 	));
 
-	// Redirige sur la page du post
 	header('Location: comments.php?id='.$_POST['id_post'].'');
 ?>
