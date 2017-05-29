@@ -1,20 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Admin - Blog</title>
-</head>
-<body>
+<?php
+	// Header
+	$title = 'Accueil - Admin Blog';
+	include '../templates/header.php';
+?>
 	<p><a href="../index.php">Retour à la liste des articles</a> - <a href="add.php">Ajouter un article</a></p>
 
 	<?php
-		// Connexion à la BDD
-		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=github-php-for-newbies;charset=utf8', 'root', 'root');
-		}
-		catch( Exception $e) {
-			die( 'Erreur : ' . $e->getMessage() );
-		}
+		include '../inc/bdd.php';
 
 		// Récupère tous les articles
 		$query = $bdd->query('SELECT id, titre FROM blog_post ORDER BY titre');
@@ -23,11 +15,13 @@
 		echo '<h2>Tous les articles</h2>';
 		echo '<ul>';
 		while( $data = $query->fetch() ) {
-			echo '<li>' . $data['titre'] . ' : <a href="delete.php?id='.$data['id'].'">Supprimer</a> - <a href="update.php?id='.$data['id'].'">Modifier</a></li>';
+			include '../templates/admin/post-settings.php';
 		}
 		echo '</ul>';
-
 		$query->closeCursor();
 	?>
-</body>
-</html>
+
+<?php
+	// Footer
+	include '../templates/footer.php';
+?>

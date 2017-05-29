@@ -1,30 +1,17 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>Ajouter un article - Blog</title>
-</head>
-<body>
-<?php if( !isset($_POST['titre']) && !isset($_POST['contenu']) ) { ?>
-
-		<form action="add.php" method="post">
-			<fieldset>
-				<legend>Ajouter un article</legend>
-				<div><input type="text" name="titre" placeholder="titre"></div>
-				<div><textarea name="contenu" placeholder="contenu" cols="30" rows="10"></textarea></div>
-				<input type="submit">
-			</fieldset>
-		</form>
+<?php
+	// Header
+	$title = 'Ajouter un article - Admin Blog';
+	include '../templates/header.php';
+?>
 
 <?php
+	if( !isset($_POST['titre']) && !isset($_POST['contenu']) ) {
+		// Formulaire d'jaout d'un article
+		include '../templates/admin/post-add.php';
+
 	} else {
 		// Connexion à la BDD
-		try {
-			$bdd = new PDO('mysql:host=localhost;dbname=github-php-for-newbies;charset=utf8', 'root', 'root');
-		}
-		catch( Exception $e ) {
-			die( 'Erreur : ' . $e->getMessage() );
-		}
+		include '../inc/bdd.php';
 
 		// Crée un nouvel article
 		$query = $bdd->prepare('
@@ -40,5 +27,8 @@
 		header('Location: index.php');
 	}
 ?>
-</body>
-</html>
+
+<?php
+	// Footer
+	include '../templates/footer.php';
+?>
