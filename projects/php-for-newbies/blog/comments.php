@@ -24,7 +24,11 @@
 
 		// Affichage du post
 		$data = $query->fetch();
-		include 'templates/post-detail.php';
+		if(empty($data)) {
+			echo "<h3 style='color: red;'>Il n'existe pas d'article avec cet identifiant</p>";
+		} else {
+			include 'templates/post-detail.php';
+		}
 		$query->closeCursor();
 
 
