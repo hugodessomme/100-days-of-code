@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 25 : 30 mai 2017
+
+**Progrès du jour** : Ré-organisation du blog
+
+**Blabla** : J'ai ajouté un système de pagination à mon blog. Cela faisait un moment que je voulais trouver une solution viable pour faire cela, et je pense être arrivé à un résultat concluant.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 24 : 29 mai 2017
 
 **Progrès du jour** : Ré-organisation du blog
