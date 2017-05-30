@@ -18,6 +18,7 @@ Bac à sable de mon apprentissage du langage PHP.
 - `mysql-write` : Requêtes SQL pour configurer des entrées (ajout, modification, suppression)
 - `minichat` : TP d'un minichat
 - `sql-functions` : Liste de fonctions SQL
+- `blog` : TP d'un blog
 
 ## Todo
 
