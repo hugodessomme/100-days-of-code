@@ -1,5 +1,15 @@
 # 100 Days Of Code - Log
 
+### Jour 24 : 29 mai 2017
+
+**Progrès du jour** : Ré-organisation du blog
+
+**Blabla** : J'améliore mon TP de blog, pour ajouter des petites fonctionnalités. Aujourd'hui, il y a une vérification effectuée si un post n'existe pas, et les fichiers du blog sont mieux organisés.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 23 : 28 mai 2017
 
 **Progrès du jour** : Un blog from scratch
