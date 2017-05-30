@@ -9,7 +9,7 @@
 		include '../inc/bdd.php';
 
 		// Récupère tous les articles
-		$query = $bdd->query('SELECT id, titre FROM blog_post ORDER BY titre');
+		$query = $bdd->query('SELECT id, titre FROM blog_post ORDER BY date_creation DESC');
 
 		// Affichage d'un article
 		echo '<h2>Tous les articles</h2>';
