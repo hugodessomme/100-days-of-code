@@ -1,5 +1,16 @@
 # 100 Days Of Code - Log
 
+
+### Jour 26 : 31 mai 2017
+
+**Progrès du jour** : Authentification à l'admin du blog
+
+**Blabla** : Il faut désormais se connecter pour accéder à l'admin du blog. Je l'ai ajouté via htacces, et aussi via un formulaire de login. Très simple via htaccess.
+
+**Lien vers le projet** : [PHP for Newbies](https://github.com/hugodessomme/100-days-of-code/tree/master/projects/php-for-newbies)
+
+
+
 ### Jour 25 : 30 mai 2017
 
 **Progrès du jour** : Ré-organisation du blog
