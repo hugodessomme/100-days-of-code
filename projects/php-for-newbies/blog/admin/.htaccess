@@ -1,0 +1,4 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+AuthUserFile "/Users/hdessomme/Sites/_sandbox/github/100-days-of-code/projects/php-for-newbies/blog/admin/.htpasswd"
+Require valid-user
