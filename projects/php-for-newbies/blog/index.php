@@ -13,7 +13,7 @@
 	// Définition de la pagination
 	$nb_posts_par_page = 5;
 
-	if( isset( $_GET['page']) ) {
+	if( isset($_GET['page']) ) {
 		$first_post = ($_GET['page'] * $nb_posts_par_page) - $nb_posts_par_page;
 	} else {
 		$first_post = 0;
