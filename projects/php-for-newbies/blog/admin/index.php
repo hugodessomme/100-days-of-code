@@ -1,27 +1,29 @@
 <?php
-	// Header
-	$title = 'Accueil - Admin Blog';
-	include '../templates/header.php';
-?>
-	<p><a href="../index.php">Retour à la liste des articles</a> - <a href="add.php">Ajouter un article</a></p>
+	// Vérification des identifiants / mot de passe
+	if( isset($_POST['login']) && isset($_POST['password']) ) {
 
-	<?php
-		include '../inc/bdd.php';
+		$login = htmlspecialchars($_POST['login']);
+		$password = htmlspecialchars($_POST['password']);
 
-		// Récupère tous les articles
-		$query = $bdd->query('SELECT id, titre FROM blog_post ORDER BY date_creation DESC');
-
-		// Affichage d'un article
-		echo '<h2>Tous les articles</h2>';
-		echo '<ul>';
-		while( $data = $query->fetch() ) {
-			include '../templates/admin/post-settings.php';
+		if( $login !== 'root' || $password !== 'root' ) {
+			echo '<p>Login / mot de passe incorrects</p>';
+			echo '<p><a href="index.php">Retour</a></p>';
+		} else {
+			header('Location: dashboard.php');
 		}
-		echo '</ul>';
-		$query->closeCursor();
-	?>
+
+	} else {
+?>
+
+<form action="index.php" method="post">
+	<fieldset>
+		<legend>Login / Mot de passe</legend>
+		<div><input type="text" name="login" placeholder="Login"></div>
+		<div><input type="password" name="password" placeholder="Mot de passe"></div>
+		<input type="submit">
+	</fieldset>
+</form>
 
 <?php
-	// Footer
-	include '../templates/footer.php';
+	}
 ?>
