@@ -1,5 +1,12 @@
 # 100 Days Of Code - Log
 
+### Jour 27-28 : 4/8 juin 2017
+
+**Progrès du jour** : Application sur blog perso
+
+**Blabla** : Je reprends tout ce que j'ai appris dans le tuto jusque-là pour l'appliquer sur mon blog perso.
+
+
 
 ### Jour 26 : 31 mai 2017
 
