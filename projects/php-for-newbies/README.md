@@ -19,6 +19,7 @@ Bac à sable de mon apprentissage du langage PHP.
 - `minichat` : TP d'un minichat
 - `sql-functions` : Liste de fonctions SQL
 - `blog` : TP d'un blog
+- `join` : Les jointures SQL
 
 ## Todo
 
