@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 29 : 3 juillet 2017
+
+**Progrès du jour** : Les jointures entre tables
+
+**Blabla** : J'ai pu voir comment relier 2 tables entre elles et récupérer les données de chacune (jointure interne/externe). Lorsque je devrai développer des choses plus complexes, je pense que je serai amener à revoir ces notions.
+
+
+
 ### Jour 27-28 : 4/8 juin 2017
 
 **Progrès du jour** : Application sur blog perso
