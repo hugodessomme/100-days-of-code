@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 30 : 17 juillet 2017
+
+**Progrès du jour** : Les expressions régulières
+
+**Blabla** : Assez complexes, les expressions régulières sont puissantes, mais je pense que cela vient avec la pratique pour mieux cerner leur construction. Je vais continuer de réaliser des exemples concrets pour m'en sortir.
+
+
+
 ### Jour 29 : 3 juillet 2017
 
 **Progrès du jour** : Les jointures entre tables
