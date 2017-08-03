@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 31 : 3 août 2017
+
+**Progrès du jour** : MVC
+
+**Blabla** : Quoique complexe à assimiler, cette structure me plaît car permet de bien partager la fonction de chaque brique du code. Je dois débuter un projet sur cette structure pour mieux la maîtriser et pouvoir plus tard prendre en main un framework.
+
+
+
 ### Jour 30 : 17 juillet 2017
 
 **Progrès du jour** : Les expressions régulières
