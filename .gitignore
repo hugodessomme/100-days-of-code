@@ -22,6 +22,14 @@ projects/wordpress/wp-settings.php
 projects/wordpress/wp-signup.php
 projects/wordpress/wp-trackback.php
 projects/wordpress/xmlrpc.php
+projects/wordpress/wp-content/languages
+projects/wordpress/wp-content/plugins
+projects/wordpress/wp-content/index.php
+projects/wordpress/wp-content/themes/index.php
+projects/wordpress/wp-content/themes/twentyfifteen
+projects/wordpress/wp-content/themes/twentysixteen
+projects/wordpress/wp-content/themes/twentyseventeen
+
 
 
 # PHP for Newbies project
