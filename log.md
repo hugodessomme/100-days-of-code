@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 32/33/34 : 12/13/14 août 2017
+
+**Progrès du jour** : Wordpress
+
+**Blabla** : Je me suis remis à l'initiation Wordpress pour varier du PHP. J'ai trouvé une série vidéo pour cela qui propose une formation jsuqu'à un niveau intermédiaire qui devrait répondre à la plupart des mes futurs cas d'utilisation.
+
+
+
 ### Jour 31 : 3 août 2017
 
 **Progrès du jour** : MVC
