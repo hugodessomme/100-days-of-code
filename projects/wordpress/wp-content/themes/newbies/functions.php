@@ -1,7 +1,6 @@
 <?php
 define('NEWBIES_VERSION', '1.0.0');
 
-<<<<<<< Updated upstream
 // Chargement des styles / scripts côté front
 function newbies_scripts() {
 	// Styles
@@ -55,10 +54,3 @@ function newbies_get_the_date_category( $datetime, $date, $category ) {
 
 	return $output;
 }
-=======
-/* Chargement des scripts */
-function newbies_scripts() {
-	wp_enqueue_style('newbies_custom', get_template_directory() . '/style.css', array(), '1.0.0', 'all');
-}
-add_action('wp_enqueue_scripts', 'newbies_scripts');
->>>>>>> Stashed changes
