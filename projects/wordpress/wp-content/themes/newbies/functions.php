@@ -32,5 +32,25 @@ function newbies_setup() {
 
 	// Affiche le title dans le head
 	add_theme_support('title-tag');
+
+	// Récupère le fichier de walker de navigation
+	require_once('includes/wp-bootstrap-navwalker.php');
+
+	// Active les menus
+	register_nav_menus( array('primary' => 'principal') );
 }
 add_action('after_setup_theme', 'newbies_setup');
+
+// Affichage de la date + catégorie
+function newbies_get_the_date_category( $datetime, $date, $category ) {
+
+	$output = '<p>publié le <time class="entry-date" datetime="';
+	$output .= $datetime;
+	$output .= '">';
+	$output .= $date;
+	$output .= '</time>, dans la catégorie ';
+	$output .= $category;
+	$output .= '</p>';
+
+	return $output;
+}
