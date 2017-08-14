@@ -41,8 +41,8 @@ function newbies_setup() {
 }
 add_action('after_setup_theme', 'newbies_setup');
 
-// Affichage de la date + catégorie
-function newbies_get_the_date_category( $datetime, $date, $category ) {
+// Affichage de la date + catégorie + étiquettes
+function newbies_get_the_date_category( $datetime, $date, $category, $tags ) {
 
 	$output = '<p>publié le <time class="entry-date" datetime="';
 	$output .= $datetime;
@@ -50,7 +50,14 @@ function newbies_get_the_date_category( $datetime, $date, $category ) {
 	$output .= $date;
 	$output .= '</time>, dans la catégorie ';
 	$output .= $category;
+	$output .= ' avec les étiquettes : ' . $tags;
 	$output .= '</p>';
 
 	return $output;
 }
+
+// Modifie le texte de suite de l'excerpt
+function newbies_excerpt( $more ) {
+	return ' <a class="more-link" href="' . get_permalink() . '">' . '[lire la suite]' . '</a>';
+}
+add_filter('excerpt_more', 'newbies_excerpt');

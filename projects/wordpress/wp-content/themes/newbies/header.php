@@ -3,7 +3,27 @@
 <head>
 	<meta charset="<?php bloginfo('charset'); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="description" conten="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat, delectus?">
+
+	<?php if (is_home() ): ?>
+		<meta name="description" content="Page d'accueil">
+	<?php endif; ?>
+
+	<?php if (is_front_page() ): ?>
+		<meta name="description" content="Page d'accueil statique">
+	<?php endif; ?>
+
+	<?php if (is_page() && !is_front_page() ): ?>
+		<meta name="description" content="Page">
+	<?php endif; ?>
+
+	<?php if (is_category() ): ?>
+		<meta name="description" content="<?php single_cat_title(''); ?>">
+	<?php endif; ?>
+
+	<?php if (is_tag() ): ?>
+		<meta name="description" content="<?php single_tag_title(''); ?>">
+	<?php endif; ?>
+
 	<?php wp_head(); ?>
 </head>
 
