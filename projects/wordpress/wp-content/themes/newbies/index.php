@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?php get_header(); ?>
 
 	<div class="container">
@@ -44,3 +45,18 @@
 	</div>
 
 <?php get_footer(); ?>
+=======
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Newbies</title>
+	<?php wp_head(); ?>
+</head>
+
+<body>
+	<h1>Coucou c'est moi !</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae ex culpa assumenda, nostrum similique delectus? Nesciunt placeat dicta consectetur sint repellendus provident nostrum autem veniam aut dolores, perspiciatis cumque magnam.</p>
+</body>
+</html>
+>>>>>>> Stashed changes
