@@ -2,33 +2,7 @@
 node_modules
 
 # Wordpress project
-projects/wordpress/wp-admin
-projects/wordpress/wp-includes
-projects/wordpress/.htaccess
-projects/wordpress/index.php
-projects/wordpress/license.txt
-projects/wordpress/readme.html
-projects/wordpress/wp-activate.php
-projects/wordpress/wp-blog-header.php
-projects/wordpress/wp-comments-post.php
-projects/wordpress/wp-config-sample.php
-projects/wordpress/wp-config.php
-projects/wordpress/wp-cron.php
-projects/wordpress/wp-links-opml.php
-projects/wordpress/wp-load.php
-projects/wordpress/wp-login.php
-projects/wordpress/wp-mail.php
-projects/wordpress/wp-settings.php
-projects/wordpress/wp-signup.php
-projects/wordpress/wp-trackback.php
-projects/wordpress/xmlrpc.php
-projects/wordpress/wp-content/languages
-projects/wordpress/wp-content/plugins
-projects/wordpress/wp-content/index.php
-projects/wordpress/wp-content/themes/index.php
-projects/wordpress/wp-content/themes/twentyfifteen
-projects/wordpress/wp-content/themes/twentysixteen
-projects/wordpress/wp-content/themes/twentyseventeen
+
 
 
 
