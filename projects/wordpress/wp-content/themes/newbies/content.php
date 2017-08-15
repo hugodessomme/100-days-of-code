@@ -16,7 +16,7 @@
 
 		<?php
 			// Affiche la date + catégorie
-			echo newbies_get_the_date_category(
+			echo newbies_get_metas(
 				get_the_date( 'c' ),
 				get_the_date(),
 				get_the_category_list(', '),

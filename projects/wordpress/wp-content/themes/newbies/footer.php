@@ -1,6 +1,14 @@
 	<footer>
 		<div class="container">
-			<p class="h3 text-center">Mon Footer</p>
+			<div class="row">
+				<?php if ( is_active_sidebar( 'widgetized-footer' ) ) : ?>
+
+					<?php dynamic_sidebar( 'widgetized-footer' ); ?>
+
+				<?php else: ?>
+					<p>Texte de fallback</p>
+				<?php endif; ?>
+			</div>
 		</div>
 	</footer>
 
