@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 35 : 15 août 2017
+
+**Progrès du jour** : Page personnalisée d'options et sidebar
+
+**Blabla** : Une partie du tutoriel plus complexe avec la configuration d'une page personnalisée d'options. Je n'ai pas terminé cette partie car je dois l'étudier plus en détails en amont. Pour le reste, cela reste à porter et je peux envisager d'avoir une configuration de base de Wordpress pour démarrer les projets.
+
+
+
 ### Jour 32/33/34 : 12/13/14 août 2017
 
 **Progrès du jour** : Wordpress
