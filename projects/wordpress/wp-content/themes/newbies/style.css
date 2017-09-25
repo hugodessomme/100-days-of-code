@@ -5,3 +5,8 @@ Author URI: https://github.com/hugodessomme/
 Description: Newbies est un thème pour apprendre Wordpress
 Version: 1.0.0
 */
+
+.aligncenter {
+	display: block;
+	margin: auto;
+}

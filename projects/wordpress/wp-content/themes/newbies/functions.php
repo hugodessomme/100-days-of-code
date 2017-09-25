@@ -68,6 +68,16 @@ function newbies_setup() {
 }
 add_action('after_setup_theme', 'newbies_setup');
 
+function my_images_sizes($sizes) {
+	$addSizes = array(
+		"medium_large" => "Medium Large"
+	);
+
+	$newSizes = array_merge($sizes, $addSizes);
+	return $newSizes;
+}
+add_filter('image_size_names_choose', 'my_images_sizes');
+
 //////////////
 
 
