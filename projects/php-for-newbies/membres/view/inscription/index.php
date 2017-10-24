@@ -1,48 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8"/>
+	<meta charset="UTF-8">
 	<title>Document</title>
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link rel="stylesheet" href="A_REMPLIR"/>
-
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 </head>
 <body>
 	<div class="container">
-		<h1>Inscription</h1>
+		<form method="post" action="index.php" style="width: 600px;margin: auto;" class="form-horizontal">
+			<fieldset>
+				<legend>Inscription</legend>
 
-		<?php if( isset($_POST['inscription']) ) {
-
-		}
-
-		else {
-			foreach($pseudos as $pseudo) {
-				echo $pseudo['pseudo'];
-			}
-		?>
-
-			<form method="post">
 				<div class="form-group">
-					<label for="inscription[pseudo]">Pseudo</label>
-					<input type="text" id="inscription[pseudo]" name="inscription[pseudo]" class="form-control">
+					<label for="inscription[pseudo]" class="control-label col-xs-4">Pseudo</label>
+					<div class="col-xs-8">
+						<input
+							type="text"
+							class="form-control"
+							name="inscription[pseudo]"
+							id="inscription[pseudo]">
+					</div>
 				</div>
 				<div class="form-group">
-					<label for="inscription[password]">Mot de passe</label>
-					<input type="password" id="inscription[password]" name="inscription[password]" class="form-control">
+					<label for="inscription[pass]" class="control-label col-xs-4">Mot de passe</label>
+					<div class="col-xs-8">
+						<input
+							type="password"
+							class="form-control"
+							name="inscription[pass]"
+							id="inscription[pass]">
+					</div>
 				</div>
 				<div class="form-group">
-					<label for="inscription[password-confirm]">Confirmation de mot de passe</label>
-					<input type="password" id="inscription[password-confirm]" name="inscription[password-confirm]" class="form-control">
+					<label for="inscription[pass2]" class="control-label col-xs-4">Retapez le mot de passe</label>
+					<div class="col-xs-8">
+						<input
+							type="password"
+							class="form-control"
+							name="inscription[pass2]"
+							id="inscription[pass2]">
+					</div>
 				</div>
 				<div class="form-group">
-					<label for="inscription[email]">Email</label>
-					<input type="email" id="inscription[email]" name="inscription[email]" class="form-control">
+					<label for="inscription[email]" class="control-label col-xs-4">Email</label>
+					<div class="col-xs-8">
+						<input
+							type="text"
+							class="form-control"
+							name="inscription[email]"
+							id="inscription[email]">
+					</div>
 				</div>
-				<div class="text-right"><input type="submit" class="btn btn-primary"></div>
-			</form>
-		<?php } ?>
+
+				<input type="submit" class="btn btn-block btn-primary">
+			</fieldset>
+		</form>
 	</div>
+
 </body>
 </html>
