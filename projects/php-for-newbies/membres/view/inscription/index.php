@@ -53,6 +53,7 @@
 				</div>
 
 				<input type="submit" class="btn btn-block btn-primary">
+				<p class="text-right"><a href="?page=login">Se connecter</a></p>
 			</fieldset>
 		</form>
 	</div>
