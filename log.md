@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 36 : 27 octobre 2017
+
+**Progrès du jour** : PHP
+
+**Blabla** : Pratique du MVC et débuts en POO.
+
+
+
 ### Jour 35 : 15 août 2017
 
 **Progrès du jour** : Page personnalisée d'options et sidebar
