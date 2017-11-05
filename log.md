@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 37 : 5 novembre 2017
+
+**Progrès du jour** : Pico CMS
+
+**Blabla** : J'ai débuté mon blog avec Pico CMS, j'ai pu comprendre les bases et je pense que je vais rapidement adapter mon thème à ce système pour mettre en ligne.
+
 ### Jour 36 : 27 octobre 2017
 
 **Progrès du jour** : PHP
