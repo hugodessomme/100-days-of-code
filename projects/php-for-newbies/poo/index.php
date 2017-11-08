@@ -5,11 +5,22 @@ function chargerClasse($classe)
 }
 spl_autoload_register('chargerClasse');
 
+$perso = new Personnage([
+	'nom' => 'Victor',
+	'forcePerso' => 5,
+	'degats' => 0,
+	'niveau' => 1,
+	'experience' => 2
+]);
+$perso2 = new Personnage([
+	'nom' => 'Hugo',
+	'forcePerso' => 20,
+	'degats' => 15,
+	'niveau' => 10,
+	'experience' => 30
+]);
+
 $db = new PDO('mysql:host=localhost;dbname=github-php-for-newbies;charset=utf8', 'root', 'root');
+$manager = new PersonnagesManager($db);
 
-$query = $db->query('SELECT * FROM personnages');
-while($data = $query->fetch(PDO::FETCH_ASSOC)) {
-	$perso = new Personnage($data);
-
-	echo $perso->getNom() . '<br>';
-}
+$manager->add($perso2);
