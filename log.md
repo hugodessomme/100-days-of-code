@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 38 : 8 novembre 2017
+
+**Progrès du jour** : PHP
+
+**Blabla** : J'ai terminé de reprendre tout ce que j'avais pu apprendre en POO. Jusqu'à présent, je n'étais pas encore très sûr d'avoir compris le principe d'hydratation et d'un manager, mais aujourd'hui j'ai pu tout résoudre.
+
+
+
 ### Jour 37 : 5 novembre 2017
 
 **Progrès du jour** : Pico CMS
