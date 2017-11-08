@@ -1,117 +1,94 @@
 <?php
 
 class Personnage {
-
-	// Attributs
-	private $force;
-	private $localisation;
-	private $experience;
+	private $id;
+	private $nom;
+	private $forcePerso;
 	private $degats;
+	private $niveau;
+	private $experience;
 
-	// Constantes
-	const FORCE_PETITE = 20;
-	const FORCE_MOYENNE = 50;
-	const FORCE_GRANDE = 80;
-
-	// Attributs statiques privés
-	private static $texteADire = "Je vais tous vous tuer";
-
-	// Constructeur
-	public function __construct($force)
+	public function __construct(array $data)
 	{
-		echo "Le constructeur !";
-
-		$this->setForce($force);
-		$this->experience = 1;
+		$this->hydrate($data);
 	}
 
-	// Afficher la force du personnage
-	public function force()
+	// Hydratation
+	public function hydrate(array $data)
 	{
-		return $this->force;
-	}
-
-	// Afficher l'expérience du personnage
-	public function experience()
-	{
-		return $this->experience;
-	}
-
-	// Afficher les dégâts du personnage
-	public function degats()
-	{
-		return $this->degats;
-	}
-
-	// Définit la valeur de force du personnage
-	public function setForce($force)
-	{
-		if (in_array($force, [self::FORCE_PETITE, self::FORCE_MOYENNE, self::FORCE_GRANDE]))
+		foreach ($data as $key => $value)
 		{
-			$this->force = $force;
+			$method = 'set'.ucfirst($key);
+
+			if (method_exists($this, $method))
+			{
+				$this->$method($value);
+			}
 		}
 	}
 
-	// Définit la valeur d'expérience du personnage
-	public function setExperience($experience)
-	{
-		if (!is_int($experience))
+	public function getId() { return $this->id; }
+	public function getNom() { return $this->nom; }
+	public function getForcePerso() { return $this->forcePerso; }
+	public function getDegats() { return $this->degats; }
+	public function getNiveau() { return $this->niveau; }
+	public function getExperience() { return $this->experience; }
+
+	// Setter : setId
+	public function setId($id) {
+		$id = (int) $id;
+
+		if ($id > 0)
 		{
-			trigger_error("La expérience d'un personnage doit être un entier", E_USER_WARNING);
-			return;
+			$this->id = $id;
 		}
+	}
 
-		// On n'autorise pas une expérience supérieure à 100
-		if ($experience > 100)
+	// Setter : setNom
+	public function setNom($nom) {
+		if (is_string($nom))
 		{
-			trigger_error("La expérience d'un personnage ne peut pas être supérieure à 100", E_USER_WARNING);
-			return;
+			$this->nom = $nom;
 		}
-
-		$this->experience = $experience;
 	}
 
-	// Définit la valeur de dégâts du personnage
-	public function setDegats($degats)
-	{
-		if (!is_int($degats))
+	// Setter : setForcePerso
+	public function setForcePerso($forcePerso) {
+		$forcePerso = (int) $forcePerso;
+
+		if ($forcePerso >= 1 && $forcePerso <= 100)
 		{
-			trigger_error("La expérience d'un personnage doit être un entier", E_USER_WARNING);
-			return;
+			$this->forcePerso = $forcePerso;
 		}
+	}
 
-		// On n'autorise pas une expérience supérieure à 100
-		if ($degats > 100)
+	// Setter : setDegats
+	public function setDegats($degats) {
+		$degats = (int) $degats;
+
+		if ($degats >= 0 && $degats <= 100)
 		{
-			trigger_error("La expérience d'un personnage ne peut pas être supérieure à 100", E_USER_WARNING);
-			return;
+			$this->degats = $degats;
 		}
-
-		$this->degats = $degats;
 	}
 
-	// Déplacement du personnage (localisation)
-	public function deplacer()
-	{
+	// Setter : setNiveau
+	public function setNiveau($niveau) {
+		$niveau = (int) $niveau;
 
+		if ($niveau >= 1 && $niveau <= 100)
+		{
+			$this->niveau = $niveau;
+		}
 	}
 
-	// Frapper un personnage (force)
-	public function frapper(Personnage $persoAFrapper)
-	{
-		$persoAFrapper->degats += $this->force;
-	}
+	// Setter : setExperience
+	public function setExperience($experience) {
+		$experience = (int) $experience;
 
-	// Augmente l'expérience du personnage
-	public function gagnerExperience()
-	{
-		$this->experience = $this->experience + 1;
+		if ($experience >= 1 && $experience <= 100)
+		{
+			$this->experience = $experience;
+		}
 	}
-
-	// Faire parler le personnage
-	public static function parler()
-	{
-		echo self::$texteADire;
-	}
-
 }

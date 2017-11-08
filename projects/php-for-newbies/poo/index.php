@@ -3,8 +3,13 @@ function chargerClasse($classe)
 {
 	require $classe . '.php';
 }
-
 spl_autoload_register('chargerClasse');
 
-$perso = new Personnage(Personnage::FORCE_GRANDE);
-$perso->parler();
+$db = new PDO('mysql:host=localhost;dbname=github-php-for-newbies;charset=utf8', 'root', 'root');
+
+$query = $db->query('SELECT * FROM personnages');
+while($data = $query->fetch(PDO::FETCH_ASSOC)) {
+	$perso = new Personnage($data);
+
+	echo $perso->getNom() . '<br>';
+}
