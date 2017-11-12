@@ -21,7 +21,7 @@ class PersonnagesManager
 			INSERT INTO personnages(nom, forcePerso, degats, niveau, experience)
 			VALUES(:nom, :forcePerso, :degats, :niveau, :experience)
 		');
-		$query->bindValue(':nom', $perso->getNom(), PDO::PARAM_INT);
+		$query->bindValue(':nom', $perso->getNom());
 		$query->bindValue(':forcePerso', $perso->getForcePerso(), PDO::PARAM_INT);
 		$query->bindValue(':degats', $perso->getDegats(), PDO::PARAM_INT);
 		$query->bindValue(':niveau', $perso->getNiveau(), PDO::PARAM_INT);
@@ -32,7 +32,7 @@ class PersonnagesManager
 
 	// Suppression d'un personnage
 	public function delete(Personnage $perso) {
-		$query = $this->db->query('
+		$this->db->exec('
 			DELETE FROM personnages
 			WHERE id = ' . $perso->getId() . '
 		');
@@ -50,6 +50,8 @@ class PersonnagesManager
 		$query->bindValue(':niveau', $perso->getNiveau(), PDO::PARAM_INT);
 		$query->bindValue(':experience', $perso->getExperience(), PDO::PARAM_INT);
 		$query->bindValue(':id', $perso->id(), PDO::PARAM_INT);
+
+		$query->execute();
 	}
 
 	// Récupère une entité

@@ -22,5 +22,3 @@ $perso2 = new Personnage([
 
 $db = new PDO('mysql:host=localhost;dbname=github-php-for-newbies;charset=utf8', 'root', 'root');
 $manager = new PersonnagesManager($db);
-
-$manager->add($perso2);
