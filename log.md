@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 39 : 12 novembre 2017
+
+**Progrès du jour** : PHP
+
+**Blabla** : J'ai suivi le guide du premier TP sur la POO, j'avoue avoir suivi bêtement les étapes (c'était les consignes), et donc même si j'ai compris la logique de fonctionnement du code, je veux le refaire intégralement par moi-même pour bien comprendre le mécanisme.
+
+
+
 ### Jour 38 : 8 novembre 2017
 
 **Progrès du jour** : PHP
