@@ -6,23 +6,28 @@ Bac à sable de mon apprentissage du langage PHP.
 
 ## Tutoriels
 
-- [Concevez votre site web avec PHP et MySQL](https://huit.re/php-for-newbies)
+- [Concevez votre site web avec PHP et MySQL](https://goo.gl/HmQosv)
+- [Programmez en orienté objet en PHP](https://goo.gl/g1Zby0)
+- [Évoluer vers une architecture MVC en PHP](https://goo.gl/n7jLXa)
 
 ## Done!
 
-- `form-files` : Envoi d'un fichier via un formulaire et le sauvegarde en local
-- `login` : Authentification par mot de passe (sur une autre page et sur la même page)
-- `sessions-cookies` : Paramétrage de sessions et cookies
-- `file-writing` : Lecture et écriture dans un fichier
-- `mysql-read` : Requêtes SQL pour afficher des entrées de la BDD + exercice de formulaire de recherche simple
-- `mysql-write` : Requêtes SQL pour configurer des entrées (ajout, modification, suppression)
-- `minichat` : TP d'un minichat
-- `sql-functions` : Liste de fonctions SQL
-- `blog` : TP d'un blog
-- `join` : Les jointures SQL
+- `blog` : Système de blog *#TP*
+- `file-writing` : Lecture et écriture dans un fichier *#memo*
+- `form-files` : Envoi d'un fichier via un formulaire et le sauvegarde en local *#TP*
+- `join` : Jointures SQL *#memo*
+- `login` : Authentification par mot de passe *#TP*
+- `membres` : Inscription / login *#TP*
+- `minichat` : Système de minichat *#TP*
+- `mvc` : Praique du MVC *#TP*
+- `mysql` : SQL pour lire / écrire des données *#memo*
+- `poo` : Pratique du PHP en orienté objet *#memo* *#TP*
+- `regular-expressions` : Expressions régulières *#memo*
+- `sessions-cookies` : Paramétrage de sessions et cookies *#memo*
+- `sql-functions` : Fonctions SQL *#memo*
 
 ## Todo
 
 - [Approfondir le développement d'un envoi de fichier via un formulaire](https://huit.re/form-files-2)
 - Approfondir la lecture / écriture de fichier
-- TP minichat : système de pagination
+- ~TP minichat : système de pagination~~
