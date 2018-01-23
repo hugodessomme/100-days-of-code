@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 40 : 23 janvier 2018
+
+**Progrès du jour** : PHP
+
+**Blabla** : Non, je n'avais pas arrêté de développer en PHP depuis Novembre 2017, je n'ai juste pas committé depuis ce temps-là... Je reprends désormais un rythme plus assidu pour y remédier. Par contre, j'avais stoppé depuis 3 semaines mon apprentissage. J'ai revu l'architecture du repo, et je me suis remplongé dans mon code avant de le poursuivre.
+
+
+
 ### Jour 39 : 12 novembre 2017
 
 **Progrès du jour** : PHP
