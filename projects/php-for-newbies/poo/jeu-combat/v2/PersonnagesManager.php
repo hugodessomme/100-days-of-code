@@ -9,23 +9,28 @@ class PersonnagesManager
 		$this->setDb($db);
 	}
 
-	// Crée un nouveau personnage
+	/**
+	 * Crée un nouveau personnage
+	 *
+	 * @param Personnage $perso Personnage à créer
+	 */
 	public function add(Personnage $perso)
 	{
-		$query = $this->db->prepare('
-			INSERT INTO personnagesCombat(nom)
-			VALUES(:nom)
-		');
+		$query = $this->db->prepare('INSERT INTO personnagesCombat(nom) VALUES(:nom)');
 		$query->bindValue(':nom', $perso->getNom());
 		$query->execute();
 
-		$perso->hydrate(array(
+		$perso->hydrate([
 			'id' => $this->db->lastInsertId(),
 			'degats' => 0
-		));
+		]);
 	}
 
-	// Modifie un personnage existant
+	/**
+	 * Mettre à jour un personnage existant
+	 *
+	 * @param Personnage $perso Personnage à mettre à jour
+	 */
 	public function update(Personnage $perso)
 	{
 		$query = $this->db->prepare('
@@ -33,59 +38,66 @@ class PersonnagesManager
 			SET degats = :degats
 			WHERE id = :id
 		');
-		$query->bindValue(':degats', $perso->getDegats(), PDO::PARAM_INT);
 		$query->bindValue(':id', $perso->getId(), PDO::PARAM_INT);
+		$query->bindValue(':degats', $perso->getDegats(), PDO::PARAM_INT);
 		$query->execute();
 	}
 
-	// Supprimer un personnage existant
+	/**
+	 * Supprime un personnage
+	 *
+	 * @param Personnage $perso Personnage à supprimer
+	 */
 	public function delete(Personnage $perso)
 	{
-		$this->db->exec('
-			DELETE FROM personnagesCombat
-			WHERE id = ' . $perso->getId() . '
-		');
+		$this->db->exec('DELETE FROM personnagesCombat WHERE id = ' . $perso->getId());
 	}
 
-	// Retourne un personnage par son identifiant ou nom
+	/**
+	 * Compte le nombre total de personnages
+	 *
+	 * @return integer
+	 */
+	public function count()
+	{
+		return (int) $this->db->query('SELECT COUNT(*) FROM personnagesCombat')->fetchColumn();
+	}
+
+	/**
+	 * Retourne un personnage
+	 *
+	 * @param integer|string $info ID ou nom du personnage
+	 * @return Personnage
+	 */
 	public function get($info)
 	{
 		if (is_int($info))
 		{
-			$query = $this->db->query('
-				SELECT * FROM personnagesCombat
-				WHERE id = ' . $info
-			);
-			$data = $query->fetch(PDO::FETCH_ASSOC);
+			$query = $this->db->query('SELECT * FROM personnagesCombat WHERE id = ' . $info);
+			$result = $query->fetch(PDO::FETCH_ASSOC);
 
-			return new Personnage($data);
+			return new Personnage($result);
 		}
-		else
-		{
-			$query = $this->db->prepare('
-				SELECT * FROM personnagesCombat
-				WHERE nom = :nom
-			');
-			$query->bindValue(':nom', $info);
 
-			$query->execute();
+		$query = $this->db->prepare('SELECT * FROM personnagesCombat WHERE nom = :nom');
+		$query->execute(['nom' => $info]);
+		$result = $query->fetch(PDO::FETCH_ASSOC);
 
-			return new Personnage($query->fetch(PDO::FETCH_ASSOC));
-		}
+		return new Personnage($result);
 	}
 
-	// Retourne une liste des personnages différent de $nom
+	/**
+	 * Récupère la liste des personnages SAUF le personnage courant
+	 *
+	 * @param string $nom Nom du personnage
+	 * @return array $personnages
+	 */
 	public function getList($nom)
 	{
 		$personnages = [];
 
-		$query = $this->db->prepare('
-			SELECT * FROM personnagesCombat
-			WHERE nom != :nom
-		');
-		$query->bindValue(':nom', $nom);
-
-		$query->execute();
+		$query = $this->db->prepare('SELECT * FROM personnagesCombat WHERE nom <> :nom ORDER BY nom');
+		$query->execute(['nom' => $nom]);
 
 		while ($data = $query->fetch(PDO::FETCH_ASSOC))
 		{
@@ -95,35 +107,30 @@ class PersonnagesManager
 		return $personnages;
 	}
 
-	// Compte le nombre de personnage
-	public function count()
-	{
-		return $this->db->query('SELECT COUNT(*) FROM personnagesCombat')->fetchColumn();
-	}
-
-	// Vérifie si un personnage existe
+	/**
+	 * Indique si le personnage existe déjà
+	 *
+	 * @param integer|string $info ID ou nom du personnage
+	 * @return boolean
+	 */
 	public function exists($info)
 	{
 		if (is_int($info))
 		{
-			return (bool) $this->db->query('
-				SELECT COUNT(*) FROM personnagesCombat
-				WHERE id = ' . $info
-			)->fetchColumn();
+			return (bool) $this->db->query('SELECT COUNT(*) FROM personnagesCombat WHERE id = ' . $info)->fetchColumn();
 		}
 
-		$query = $this->db->prepare('
-			SELECT COUNT(*) FROM personnagesCombat
-			WHERE nom = :nom
-		');
-		$query->bindValue(':nom', $info);
-		$query->execute();
-
+		$query = $this->db->prepare('SELECT COUNT(*) FROM personnagesCombat WHERE nom = :nom');
+		$query->execute([':nom' => $info]);
 		return (bool) $query->fetchColumn();
 	}
 
-	// Initialise la connexion à la base de données
-	public function setDb(PDO $db)
+	/**
+	 * Initialise la base de données
+	 *
+	 * @param PDO $db Object de connexion à la base de données
+	 */
+	public function setDB(PDO $db)
 	{
 		$this->db = $db;
 	}
