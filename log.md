@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 41 : 27 janvier 2018
+
+**Progrès du jour** : PHP
+
+**Blabla** : J'ai suivi la correction du TP sur l'évolution du jeu de combat. Il me reste quelques petites erreurs à corriger, mais j'ai compris le principe d'évolution de ce code.
+
+
+
 ### Jour 40 : 23 janvier 2018
 
 **Progrès du jour** : PHP
