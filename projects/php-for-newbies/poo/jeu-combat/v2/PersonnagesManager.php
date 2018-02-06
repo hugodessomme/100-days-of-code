@@ -16,13 +16,15 @@ class PersonnagesManager
 	 */
 	public function add(Personnage $perso)
 	{
-		$query = $this->db->prepare('INSERT INTO personnagesCombat(nom) VALUES(:nom)');
+		$query = $this->db->prepare('INSERT INTO personnagesCombat(nom, type) VALUES(:nom, :type)');
 		$query->bindValue(':nom', $perso->getNom());
+		$query->bindValue(':type', $perso->getType());
 		$query->execute();
 
 		$perso->hydrate([
 			'id' => $this->db->lastInsertId(),
-			'degats' => 0
+			'degats' => 0,
+			'atout' => 0
 		]);
 	}
 
@@ -35,11 +37,13 @@ class PersonnagesManager
 	{
 		$query = $this->db->prepare('
 			UPDATE personnagesCombat
-			SET degats = :degats
+			SET degats = :degats, timeEndormi = :timeEndormi, atout = :atout
 			WHERE id = :id
 		');
 		$query->bindValue(':id', $perso->getId(), PDO::PARAM_INT);
 		$query->bindValue(':degats', $perso->getDegats(), PDO::PARAM_INT);
+		$query->bindValue(':timeEndormi', $perso->getTimeEndormi(), PDO::PARAM_INT);
+		$query->bindValue(':atout', $perso->getAtout(), PDO::PARAM_INT);
 		$query->execute();
 	}
 
@@ -75,15 +79,27 @@ class PersonnagesManager
 		{
 			$query = $this->db->query('SELECT * FROM personnagesCombat WHERE id = ' . $info);
 			$result = $query->fetch(PDO::FETCH_ASSOC);
+		}
+		else
+		{
+			$query = $this->db->prepare('SELECT * FROM personnagesCombat WHERE nom = :nom');
+			$query->execute([':nom' => $info]);
 
-			return new Personnage($result);
+			$result = $query->fetch(PDO::FETCH_ASSOC);
 		}
 
-		$query = $this->db->prepare('SELECT * FROM personnagesCombat WHERE nom = :nom');
-		$query->execute(['nom' => $info]);
-		$result = $query->fetch(PDO::FETCH_ASSOC);
-
-		return new Personnage($result);
+		switch ($result['type'])
+		{
+			case 'guerrier':
+				return new Guerrier($result);
+				break;
+			case 'magicien':
+				return new Magicien($result);
+				break;
+			default:
+				return null;
+				break;
+		}
 	}
 
 	/**
@@ -101,7 +117,17 @@ class PersonnagesManager
 
 		while ($data = $query->fetch(PDO::FETCH_ASSOC))
 		{
-			$personnages[] = new Personnage($data);
+			switch($data['type'])
+			{
+				case 'guerrier':
+					$personnages[] = new Guerrier($data);
+					break;
+				case 'magicien':
+					$personnages[] = new Magicien($data);
+					break;
+				default:
+					return null;
+			}
 		}
 
 		return $personnages;

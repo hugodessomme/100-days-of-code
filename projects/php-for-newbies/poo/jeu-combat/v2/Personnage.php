@@ -237,7 +237,7 @@ class Personnage
 	 *
 	 * @return boolean
 	 */
-	public function esEndormi()
+	public function estEndormi()
 	{
 		return $this->timeEndormi > time();
 	}

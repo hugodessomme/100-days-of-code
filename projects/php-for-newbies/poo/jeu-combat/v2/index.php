@@ -34,20 +34,32 @@ $manager = new PersonnagesManager($db);
 /**
  * On crée un personnage en vérifiant les informations entrées par l'utilisateur
  */
-if (isset($_POST['creer']) && isset($_POST['nom'])): // Si on souhaite créer un personnage
-	$perso = new Personnage(['nom' => $_POST['nom']]);
+if (isset($_POST['creer']) && isset($_POST['nom'])):
+	switch($_POST['type']):
+		case 'magicien':
+			$perso = new Magicien(['nom' => $_POST['nom']]);
+			break;
+		case 'guerrier':
+			$perso = new Guerrier(['nom' => $_POST['nom']]);
+			break;
+		default:
+			$message = "Le type du personnage est invalide";
+			break;
+	endswitch;
 
-	if (!$perso->nomValide()):
-		$message = "Le nom choisi est invalide !";
-		unset($perso);
+	if (isset($perso)):
+		if (!$perso->nomValide()):
+			$message = "Le nom choisi est invalide !";
+			unset($perso);
 
-	elseif ($manager->exists($perso->getNom())):
-		$message = "Le nom du personnage est déjà pris";
-		unset($perso);
+		elseif ($manager->exists($perso->getNom())):
+			$message = "Le nom du personnage est déjà pris";
+			unset($perso);
 
-	else:
-		$manager->add($perso);
+		else:
+			$manager->add($perso);
 
+		endif;
 	endif;
 
 /**
@@ -78,27 +90,72 @@ elseif (isset($_GET['frapper'])):
 			$erreur = $perso->frapper($persoAFrapper);
 
 			switch($erreur):
-				case Personnage::CEST_MOI :
+				case Personnage::CEST_MOI:
 					$message = "Mais.. Pourquoi voulez-vous vous frapper ?";
 					break;
 
-				case Personnage::PERSONNAGE_FRAPPE :
+				case Personnage::PERSONNAGE_FRAPPE:
 					$message = "Le personnage a bien été frappé";
 
 					$manager->update($perso);
 					$manager->update($persoAFrapper);
-
 					break;
 
-				case Personnage::PERSONNAGE_TUE :
+				case Personnage::PERSONNAGE_TUE:
 					$message = "Vous avez tué ce personnage !";
-
 					$manager->update($perso);
 					$manager->delete($persoAFrapper);
+					break;
 
+				case Personnage::PERSONNAGE_ENDORMI:
+					$message = "Vous êtes endormi, vous ne pouvez pas frapper de personnage";
 					break;
 			endswitch;
 
+		endif;
+	endif;
+
+/**
+ * Si on ensorcele un personnage
+ */
+elseif (isset($_GET['ensorceler'])):
+	if (!isset($perso)):
+		$message = "Merci de créer un personnage ou de vous identifier";
+
+	else:
+		if ($perso->getType() !== 'magicien'):
+			$message = "Seuls les magiciens peuvent ensorceler des personnages !";
+
+		else:
+			if (!$manager->exists((int) $_GET['ensorceler'])):
+				$message = "Le personnage que vous voulez frapper n'existe pas !";
+
+			else:
+				$persoAEnsorceler = $manager->get((int) $_GET['ensorceler']);
+				$erreur = $perso->lancerUnSort($persoAEnsorceler);
+
+				switch($erreur):
+					case Personnage::CEST_MOI:
+					$message = "Mais.. Pourquoi voulez-vous vous ensorceler ?";
+					break;
+
+					case Personnage::PERSONNAGE_ENSORCELE:
+						$message = "Le personnage a bien été ensorcelé";
+
+						$manager->update($perso);
+						$manager->update($persoAEnsorceler);
+						break;
+
+					case Personnage::PAS_DE_MAGIE:
+						$message = "Vous n'avez pas de magie";
+						break;
+
+					case Personnage::PERSONNAGE_ENDORMI:
+						$message = "Vous êtes endormi, vous ne pouvez pas frapper de personnage";
+						break;
+				endswitch;
+
+			endif;
 		endif;
 	endif;
 endif;
@@ -137,8 +194,23 @@ endif;
 			<fieldset>
 				<legend>Mes informations</legend>
 				<p>
+					Type : <?= ucfirst($perso->getType()) ?><br />
 					Nom : <?= htmlspecialchars($perso->getNom()) ?><br />
-					Dégâts : <?= $perso->getDegats() ?>
+					Dégâts : <?= $perso->getDegats() ?><br />
+
+					<?php
+						switch($perso->getType()):
+							case 'magicien':
+								echo "Magie : ";
+								break;
+
+							case 'guerrier':
+								echo "Protection : ";
+								break;
+						endswitch;
+
+						echo $perso->getAtout();
+					?>
 				</p>
 		    </fieldset>
 
@@ -153,11 +225,23 @@ endif;
 		    			if (empty($personnages)):
 		    				echo "Il n'y a personne à frapper";
 	    				else:
-	    					foreach($personnages AS $personnage):
-    							echo '<a href="?frapper=' . $personnage->getId() . '">';
-    							echo htmlspecialchars($personnage->getNom());
-    							echo '</a> (dégâts : ' . $personnage->getDegats() . ') <br/>';
-	    					endforeach;
+	    					if ($perso->estEndormi()):
+    							echo "Un magicien vous a endormi ! Vous allez vous réveiller dans " . $perso->reveil();
+							else:
+		    					foreach($personnages AS $personnage):
+		    						echo '<p>';
+	    							echo '<a href="?frapper=' . $personnage->getId() . '">';
+	    							echo htmlspecialchars($personnage->getNom());
+	    							echo '</a> (dégâts : ' . $personnage->getDegats() . ')';
+
+	    							if ($perso->getType() == 'magicien'):
+	    								echo ' | <a href="?ensorceler='.$personnage->getId().'">';
+	    								echo 'Lancer un sort';
+	    								echo '</a>';
+	    							endif;
+	    							echo '</p>';
+		    					endforeach;
+	    					endif;
 	    				endif;
 
 		    		?>
@@ -176,6 +260,14 @@ endif;
 					<div class="pure-control-group">
 						<label for="nom">Nom</label>
 						<input type="text" id="nom" name="nom" maxlength="50">
+					</div>
+
+					<div class="pure-control-group">
+						<label for="type">Type</label>
+						<select name="type">
+							<option value="magicien">Magicien</option>
+							<option value="guerrier">Guerrier</option>
+						</select>
 					</div>
 
 					<div class="pure-controls">
