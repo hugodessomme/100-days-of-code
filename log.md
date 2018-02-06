@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 42 : 6 février 2018
+
+**Progrès du jour** : PHP
+
+**Blabla** : La dernière fois, il restait une erreur lors de l'ajout d'un personnage "guerrier". Finalement, cela venait de la coniguration de la BDD qui n'autorisait pas un champ à être NULL. Avec l'architecture des fichiers actuelle, il est relativement compliqué de trouver les erreurs. Vivement le MVC avec POO.
+
+
+
 ### Jour 41 : 27 janvier 2018
 
 **Progrès du jour** : PHP
