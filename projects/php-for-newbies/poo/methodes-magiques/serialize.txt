@@ -1,1 +1,0 @@
-a:3:{s:4:"truc";s:6:"machin";s:5:"chose";i:8;i:9;s:6:"youpie";}
