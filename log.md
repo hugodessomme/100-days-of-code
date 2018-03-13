@@ -1,5 +1,14 @@
 # 100 Days Of Code - Log
 
+### Jour 2 : 13 mars 2018
+
+**Tâche du jour** : Vue.js - L'Instance
+
+**Notes** : Introduction à l'instance `Vue`, ses propriétés et ses méthodes natives (`mounted`, et `destroyed`). J'ai appris qu'il faut bien penser à destroy des méthodes lancées au `mounted` pour ne pas surcharger le fonctionnement du composant.
+
+Tuto [VueJS 2 - L'Instance](https://www.grafikart.fr/formations/vuejs/instance)\
+Commit [#20da87e](https://github.com/hugodessomme/100-days-of-code/commit/20da87ecba4e17f4739fd073be336f4b90eb6616)\
+
 ### Jour 1 : 12 mars 2018
 
 **Tâche du jour** : Reborn & Vue.js
