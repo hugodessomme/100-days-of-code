@@ -7,7 +7,7 @@
 **Notes** : Tour d'horizon des différentes propriétés Vue.js à disposition, mais aussi création de directvies custom. Il est facile d'intégrer différents comportements !
 
 Tuto [VueJS 2 - L'Instance](https://www.grafikart.fr/formations/vuejs/directives)\
-Commit [#e9f599e](https://github.com/hugodessomme/100-days-of-code/commit/e9f599eab31c764d8da2483389a67bb79d87b411)\
+Commit [#e9f599e](https://github.com/hugodessomme/100-days-of-code/commit/e9f599eab31c764d8da2483389a67bb79d87b411)
 
 ### Jour 2 : 13 mars 2018
 
@@ -16,7 +16,7 @@ Commit [#e9f599e](https://github.com/hugodessomme/100-days-of-code/commit/e9f599
 **Notes** : Introduction à l'instance `Vue`, ses propriétés et ses méthodes natives (`mounted`, et `destroyed`). J'ai appris qu'il faut bien penser à destroy des méthodes lancées au `mounted` pour ne pas surcharger le fonctionnement du composant.
 
 Tuto [VueJS 2 - L'Instance](https://www.grafikart.fr/formations/vuejs/instance)\
-Commit [#20da87e](https://github.com/hugodessomme/100-days-of-code/commit/20da87ecba4e17f4739fd073be336f4b90eb6616)\
+Commit [#20da87e](https://github.com/hugodessomme/100-days-of-code/commit/20da87ecba4e17f4739fd073be336f4b90eb6616)
 
 ### Jour 1 : 12 mars 2018
 
