@@ -1,5 +1,14 @@
 # 100 Days Of Code - Log
 
+### Jour 3 : 14 mars 2018
+
+**Tâche du jour** : Vue.js - Propriétés combinées et Watchers
+
+**Notes** : Tour d'horizon des différentes propriétés Vue.js à disposition, mais aussi création de directvies custom. Il est facile d'intégrer différents comportements !
+
+Tuto [VueJS 2 - L'Instance](https://www.grafikart.fr/formations/vuejs/directives)\
+Commit [#e9f599e](https://github.com/hugodessomme/100-days-of-code/commit/e9f599eab31c764d8da2483389a67bb79d87b411)\
+
 ### Jour 2 : 13 mars 2018
 
 **Tâche du jour** : Vue.js - L'Instance
