@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Vue.js</title>
+  <style>
+    .box { padding: 5px 10px; }
+    .success { border: 2px solid green; }
+    .error { border: 2px solid red; }
+  </style>
+</head>
+<body>
+  <div id="app">
+    <input type="checkbox" v-model="success">
+    <input type="text" v-model="message">
+    {{ message }}
+
+    <div :class="cls">
+      Salut les gens
+    </div>
+
+    <div>
+      Prénom : {{ firstname }}<br>
+      Nom : {{ lastname }}<br>
+      Nom complet <input type="text" v-model="fullname"><br>
+      Complete name <input type="text" v-model="completename">
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.15/vue.js"></script>
+  <script src="js/3-computed-properties-watchers.js"></script>
+</body>
+</html>
