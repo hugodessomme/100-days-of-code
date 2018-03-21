@@ -1,5 +1,17 @@
 # 100 Days Of Code - Log
 
+### Jour 4 : 20 mars 2018
+
+**Tâche du jour** : EmberJS - Découverte
+
+**Notes** : Je ne suis pas passé subitement de Vue.js à EmberJS, mais pour accomplir une tâche temporaire je dois me former à ce framework JS. J'ai déjà pu voir des similitudes avec Vue.js au niveau de la logique, c'est devenu un peu trop complexe pour la gestion des données (envoyer / recevoir), mais j'ai déjà pu comprendre l'architecture MVC du framework.
+
+[Tuto 1](http://yoember.com/#lesson-1)
+[Tuto 2](http://yoember.com/#lesson-2)
+[Tuto 3](http://yoember.com/#lesson-3)
+[Tuto 4](http://yoember.com/#lesson-4)
+Commit [#74fc068](https://github.com/hugodessomme/100-days-of-code/commit/74fc0689db99929d739239497b37790be2407e85)
+
 ### Jour 3 : 14 mars 2018
 
 **Tâche du jour** : Vue.js - Propriétés combinées et Watchers
