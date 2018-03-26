@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 5 : 20 mars 2018
+
+**Tâche du jour** : Fuck le JS - Welcome back PHP!
+
+**Notes** : Après une tentavie, je me re-focalise sur le PHP, j'étais bien parti et je pense que, même si cela fait quelques mois, j'ai conservé mes acquis et je ne veux pas les perdre. J'ai donc passé mon temps à reprendre ce que j'avais déjà fais, et demain je vais me remettre à coder réellement !
+
 ### Jour 4 : 20 mars 2018
 
 **Tâche du jour** : EmberJS - Découverte
