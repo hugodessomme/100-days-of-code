@@ -1,6 +1,12 @@
 # 100 Days Of Code - Log
 
-### Jour 5 : 20 mars 2018
+### Jour 6 : 27 mars 2018
+
+**Tâche du jour** : Git-game
+
+**Notes** : Pas de PHP car j'ai été pris par un jeu qui fait travailler ses connaissances de Git. J'ai pu découvrir le système de tags et l'update d'une branche local depuis un remote. Si quelqu'un passe par là, je vous le conseille !
+
+### Jour 5 : 26 mars 2018
 
 **Tâche du jour** : Fuck le JS - Welcome back PHP!
 
