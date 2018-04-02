@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 7 : 1 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Reprise de mon avancée, là où j'en étais avant de recommencer le "100DaysOfCode challenge".
+
 ### Jour 6 : 27 mars 2018
 
 **Tâche du jour** : Git-game
