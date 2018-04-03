@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 9 : 3 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'arrive à la fin de mon avancée déjà acquise, encore demain à revoir les méthodes magiques et je pourrai apprendre de nouvelles choses.
+
 ### Jour 8 : 2 avril 2018
 
 **Tâche du jour** : PHP
