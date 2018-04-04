@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 10 : 4 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Poursuite des méthodes magiques, j'arrive presque au bout de tout ce que j'ai déjà, j'avoue survoler cette partie qui me semble plus secondaire à maîtriser pour le moment.
+
 ### Jour 9 : 3 avril 2018
 
 **Tâche du jour** : PHP
