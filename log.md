@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 11 : 5 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai terminé de survoler les méthodes magiques et donc je démarre finalement là où j'en étais rendu. J'ai pu voir comment parcourir un objet, qu'à l'instanciation d'une classe ce n'est pas un objet en tant que tel qui est assigné mais son identifiant, et le clone d'objet.
+
 ### Jour 10 : 4 avril 2018
 
 **Tâche du jour** : PHP
