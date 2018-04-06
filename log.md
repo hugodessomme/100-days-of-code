@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 12 : 6 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai débuté le chapître sur les interfaces, je comprends leur fonctionnement mais je n'arrive pas encore concrètement à voir à quoi ça pourrait servir. Pour le moment, cela me fait penser qu'il s'agit simplement de squelette pour la création des classes. Par contre, même si les interfaces prédéfinies (j'ai vu Iterator et SeekableIterator) sont intéressantes, de même, je ne vois pas encore l'intérêt.
+
 ### Jour 11 : 5 avril 2018
 
 **Tâche du jour** : PHP
