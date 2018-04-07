@@ -1,8 +1,8 @@
 <?php
 
-class Me implements SeekableIterator {
+class Me implements SeekableIterator, ArrayAccess, Countable {
   private $position = 0;
-  private $tableau = ['1er élément', '2ème élément', '3ème élément'];
+  private $tableau = ['1er élément', '2ème élément', '3ème élément', '4ème élément', '5ème élément'];
 
   /* Retourne l'élément courant du tableau */
   public function current()
@@ -46,13 +46,68 @@ class Me implements SeekableIterator {
       $this->position = $initialPosition;
     }
   }
+
+  /* Vérifie si la clé existe */
+  public function offsetExists($key)
+  {
+    return isset($this->tableau[$key]);
+  }
+
+  /* Retourne la valeur de la clé demandée */
+  public function offsetGet($key)
+  {
+    return $this->tableau[$key];
+  }
+
+  /* Assigne une valuer à une entrée */
+  public function offsetSet($key, $value)
+  {
+    $this->tableau[$key] = $value;
+  }
+
+  /* Supprime une entrée */
+  public function offsetUnset($key)
+  {
+    unset($this->tableau[$key]);
+  }
+
+  /* Retourne le nombre d'entrée */
+  public function count()
+  {
+    return count($this->tableau);
+  }
 }
 
-$a = new Me;
 
-foreach ($a as $key => $value) {
-  echo $key . " => " . $value . "<br/>";
+$objet = new Me;
+
+echo 'Parcours de l\'objet...<br />';
+foreach ($objet as $key => $value)
+{
+  echo $key, ' => ', $value, '<br />';
 }
 
-$a->seek(1);
-echo $a->current();
+echo '<br />Remise du curseur en troisième position...<br />';
+$objet->seek(2);
+echo 'Élément courant : ', $objet->current(), '<br />';
+
+echo '<br />Affichage du troisième élément : ', $objet[2], '<br />';
+echo 'Modification du troisième élément... ';
+$objet[2] = 'Hello world !';
+echo 'Nouvelle valeur : ', $objet[2], '<br /><br />';
+
+echo 'Actuellement, mon tableau comporte ', count($objet), ' entrées<br /><br />';
+
+echo 'Destruction du quatrième élément...<br />';
+unset($objet[3]);
+
+if (isset($objet[3]))
+{
+  echo '$objet[3] existe toujours... Bizarre...';
+}
+else
+{
+  echo 'Tout se passe bien, $objet[3] n\'existe plus !';
+}
+
+echo '<br /><br />Maintenant, il n\'en comporte plus que ', count($objet), ' !';
