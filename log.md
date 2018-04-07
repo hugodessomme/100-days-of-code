@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 13 : 7 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai terminé le chapître sur les interfaces et celui sur les exceptions. Je pense qu'il faut que je revois ces deux thèmes, avec des exemples concrets. Même si pour le moment j'ai compris la logique et fonctionnement, je ne saisis pas l'intérêt et si c'est réellement utilisé pour un projet lambda.
+
 ### Jour 12 : 6 avril 2018
 
 **Tâche du jour** : PHP
