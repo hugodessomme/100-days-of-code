@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 14 : 8 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai pu voir ce que sont les traits, qui sont facilement comparables aux mixins pour un pré-processeur CSS. Même s'ils ont des spécificités (que l'on doit rencontrer de manière exceptionnelle), leur apprentissage est simple.
+
 ### Jour 13 : 7 avril 2018
 
 **Tâche du jour** : PHP
