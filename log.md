@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 15 : 9 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai commencé à voir l'API de la réflexivité pour mieux comprendre la construction d'une classe, et ses possibles relations avec d'autres (héritage). Je continuerai demain car mal à la tête pour ce soir !
+
 ### Jour 14 : 8 avril 2018
 
 **Tâche du jour** : PHP
