@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 16 : 10 avril 2018
+
+**Tâche du jour** : Conférence
+
+**Notes** : Pas de code ce soir, je suis allé à un meetup "Human Talks Nantes" où je n'ai, honnêtement, rien capté ! Mais ça fait aussi du bien de voir le niveau à l'extérieur pour se remettre en question sur ses compétences et se re-motiver à apprendre.
+
 ### Jour 15 : 9 avril 2018
 
 **Tâche du jour** : PHP
