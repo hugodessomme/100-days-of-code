@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 17 : 11 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai pu voir les classes ReflectionClass / ReflectionMethod et ReflectionProperty qui permettent d'analyser les composantes d'une classe. Je pense que cela s'utilise dans le cadre d'une documentation, ou pour la compréhension d'un code existant.
+
 ### Jour 16 : 10 avril 2018
 
 **Tâche du jour** : Conférence
