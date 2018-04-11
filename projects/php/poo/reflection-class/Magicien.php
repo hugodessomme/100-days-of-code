@@ -1,6 +1,9 @@
 <?php
-class Magicien extends Personnage
+class Magicien extends Personnage implements iMagicien
 {
+  public function randomMethod() {
+    return true;
+  }
   public function lancerUnSort(Personnage $perso)
   {
     if ($this->degats >= 0 && $this->degats <= 25)

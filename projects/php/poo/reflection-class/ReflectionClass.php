@@ -7,6 +7,7 @@ spl_autoload_register('autoload');
 
 $magicien = new Magicien(['nom' => 'vyk12', 'type' => 'magicien']);
 $classMagicien = new ReflectionObject($magicien);
+$interfaceMagicien = new ReflectionClass('iMagicien');
 
 // Savoir si la classe possède un attribut
 if ($classMagicien->hasProperty('magie')) {
@@ -52,7 +53,7 @@ if ($classMagicien->isSubclassOf('Personnage')) {
   echo 'La classe Magicien n\'a pas pour parent la classe Personnage';
 }
 
-// Savoir si la classe est abstraite, finale ou instanciable
+// Savoir si la classe est abstraite
 $classPersonnage = new ReflectionClass('Personnage');
 
 if ($classPersonnage->isAbstract()) {
@@ -61,14 +62,34 @@ if ($classPersonnage->isAbstract()) {
   echo 'La classe Personnage n\'est pas abstraite';
 }
 
+// Savoir si la classe est finale
 if ($classPersonnage->isFinal()) {
   echo 'La classe Personnage est finale';
 } else {
   echo 'La classe Personnage n\'est pas finale';
 }
 
+// Savoir si la classe est instanciable
 if ($classPersonnage->isInstantiable()) {
   echo 'La classe Personnage est instanciable';
 } else {
   echo 'La classe Personnage n\'est pas instanciable';
 }
+
+// Savoir s'il s'agit bien d'une interface
+if ($interfaceMagicien->isInterface()) {
+  echo "iMagicien est bien une interface";
+} else {
+  echo "iMagicien n\'est pas une interface";
+}
+
+// Savoir si une classe implémente une interface
+if ($classMagicien->implementsInterface('iMagicien')) {
+  echo "La classe Magicien implémente l'interface iMagicien";
+} else {
+  echo "La classe Magicien n\'implémente pas l'interface iMagicien";
+}
+
+// Récupérer les interfaces implémentées
+echo '<pre>' . print_r($classMagicien->getInterfaces(), true) . '</pre>';
+echo '<pre>' . print_r($classMagicien->getInterfaceNames(), true) . '</pre>';
