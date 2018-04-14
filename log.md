@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 18 : 14 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Présentation des annotations, qui sont la documentation de nos classes / méthodes / propriétés. J'avais déjà pu voir ce concept avec phpDoc.
+
 ### Jour 17 : 11 avril 2018
 
 **Tâche du jour** : PHP
