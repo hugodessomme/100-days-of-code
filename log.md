@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 19 : 16 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai regardé une vidéo de Grafikart intitulée "PHP c'est de la merde" qui explique les arguments contre le langage et analyse leur origine.
+
 ### Jour 18 : 14 avril 2018
 
 **Tâche du jour** : PHP
