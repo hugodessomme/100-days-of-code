@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 20 : 17 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Après avoir vu la théorie de l'UML, j'ai pu modéliser mes classes et leurs relations. Je n'ai malheureusement pas pu utiliser l'extension "uml2php5" qui ne semble pas être disponible pour Mac OS. Cette extension aurait du permettre l'export de l'UML en code PHP, je pourrais essayer en passant par une machine virtuelle pour voir le rendu.
+
 ### Jour 19 : 16 avril 2018
 
 **Tâche du jour** : PHP
