@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 21 : 18 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Aujourd'hui j'ai entamé le chapître sur les design pattern, mais après un moment je me suis décidé à débuter mon 1er vrai projet avec tout ce que j'ai pu apprendre jusque-là. Il s'agit d'un CRUD de complexité moyenne, avec une partie connexion, fonctionnalités d'ajout/suppression/mise à jour standards, ainsi qu'une recherche. Je reprends des specs fonctionnelles que j'avais eu suite à une ancienne candidature pour une alternance en tant que développeur web. Je commence à réaliser que le projet va me prendre un moment, mais il va me permettre de bien manipuler le tout.
+
 ### Jour 20 : 17 avril 2018
 
 **Tâche du jour** : PHP
