@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 22 : 19 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Poursuite de mon CRUD, je suis content car même si j'ai rencontré quelques problèmes j'ai pu avancer comme je le voulais. Ca commence à rentrer, et je commence à acquérir la logique de développement pour anticiper ce sur quoi je vais enchaîner.
+
 ### Jour 21 : 18 avril 2018
 
 **Tâche du jour** : PHP
