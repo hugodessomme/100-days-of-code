@@ -2,7 +2,7 @@
 
 class Task {
   protected $id;
-  protected $title;
+  protected $task;
   protected $category;
   protected $date;
 
@@ -47,14 +47,14 @@ class Task {
   }
 
   /**
-   * Set the title
+   * Set the task
    *
    * @param string $data
    */
-  public function setTitle($data)
+  public function setTask($data)
   {
     if (is_string($data)) {
-      $this->title = $data;
+      $this->task = $data;
     }
   }
 
@@ -90,11 +90,11 @@ class Task {
   public function getId() { return $this->id; }
 
   /**
-   * Get the title
+   * Get the task
    *
    * @return string
    */
-  public function getTitle() { return $this->title; }
+  public function getTask() { return $this->task; }
 
   /**
    * Get the category
@@ -116,14 +116,3 @@ class Task {
     return $this->date;
   }
 }
-
-$a = new Task([
-  'id' => 1,
-  'title' => 'Hello World!',
-  'category' => 'food',
-  'date' => '2 juin 2017'
-]);
-echo $a->getId();
-echo $a->getTitle();
-echo $a->getCategory();
-echo $a->getDate();
