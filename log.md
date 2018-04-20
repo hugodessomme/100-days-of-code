@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 23 : 20 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Je me suis penché sur la fonctionnalité d'ajout d'une tâche. Même si elle fonctionne, cela m'a permis de me rendre compte que je dois revoir ma BDD en dédiant une table pour les catégories. Sinon, la récupération des catégories n'est pas cohérente puisqu'elle récupère plusieurs fois les mêmes catégories.
+
 ### Jour 22 : 19 avril 2018
 
 **Tâche du jour** : PHP
