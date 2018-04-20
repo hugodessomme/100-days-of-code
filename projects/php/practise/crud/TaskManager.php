@@ -27,9 +27,17 @@ class TaskManager
   /**
    * Add a task
    */
-  public function add()
+  public function add(Task $data)
   {
+    $query = $this->db->prepare('
+      INSERT INTO practiseCRUD(taskTitle, taskCategory, taskDate)
+      VALUES(:taskTitle, :taskCategory, :taskDate)
+    ');
+    $query->bindValue(':taskTitle', $data->getTaskTitle());
+    $query->bindValue(':taskCategory', $data->getTaskCategory());
+    $query->bindValue(':taskDate', $data->getTaskDate());
 
+    $query->execute();
   }
 
   /**
@@ -89,12 +97,12 @@ class TaskManager
    */
   public function getCategories()
   {
-    $query = $this->db->query('SELECT category FROM practiseCRUD');
+    $query = $this->db->query('SELECT taskCategory FROM practiseCRUD');
 
     $categories = [];
 
     while ($data = $query->fetch()) {
-      $categories[] = $data['category'];
+      $categories[] = $data['taskCategory'];
     }
 
     return $categories;
