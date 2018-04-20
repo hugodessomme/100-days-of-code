@@ -1,10 +1,10 @@
 <?php
 
 class Task {
-  protected $id;
-  protected $task;
-  protected $category;
-  protected $date;
+  protected $taskId;
+  protected $taskTitle;
+  protected $taskCategory;
+  protected $taskDate;
 
   /**
    * Constructor
@@ -37,12 +37,12 @@ class Task {
    *
    * @param int $data
    */
-  public function setId($data)
+  public function setTaskId($data)
   {
     $id = (int) $data;
 
     if ($id > 0) {
-      $this->id = $data;
+      $this->taskId = $id;
     }
   }
 
@@ -51,10 +51,10 @@ class Task {
    *
    * @param string $data
    */
-  public function setTask($data)
+  public function setTaskTitle($data)
   {
     if (is_string($data)) {
-      $this->task = $data;
+      $this->taskTitle = $data;
     }
   }
 
@@ -63,10 +63,10 @@ class Task {
    *
    * @param string $data
    */
-  public function setCategory($data)
+  public function setTaskCategory($data)
   {
     if (is_string($data)) {
-      $this->category = $data;
+      $this->taskCategory = $data;
     }
   }
 
@@ -75,10 +75,10 @@ class Task {
    *
    * @param string $data
    */
-  public function setDate($data)
+  public function setTaskDate($data)
   {
     if (is_string($data)) {
-      $this->date = $data;
+      $this->taskDate = $data;
     }
   }
 
@@ -87,32 +87,26 @@ class Task {
    *
    * @return int
    */
-  public function getId() { return $this->id; }
+  public function getId() { return $this->taskId; }
 
   /**
    * Get the task
    *
    * @return string
    */
-  public function getTask() { return $this->task; }
+  public function getTaskTitle() { return $this->taskTitle; }
 
   /**
    * Get the category
    *
    * @return string
    */
-  public function getCategory()
-  {
-    return $this->category;
-  }
+  public function getTaskCategory() { return $this->taskCategory; }
 
   /**
    * Get the date
    *
    * @return string
    */
-  public function getDate()
-  {
-    return $this->date;
-  }
+  public function getTaskDate() { return $this->taskDate; }
 }
