@@ -11,3 +11,16 @@
 </head>
 <body>
   <div class="container">
+    <hr>
+
+    <div class="row">
+      <div class="col col-auto  ">
+        <img src="https://placecage.com/100/100" alt="">
+      </div>
+      <div class="col">
+        <h1>Hello Cage!</h1>
+        <h2>CRUD</h2>
+      </div>
+    </div>
+
+    <hr>
