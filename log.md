@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 24 : 22 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai pu résoudre le problème avec les catégories. Je leur ai dédié une table, je pense que cette gestion est plus propre. Il faut que je revois la manière de récupérer le titre de ces catégories (stocké donc dans une autre table) pour le corréler avec sa tâche.
+
 ### Jour 23 : 20 avril 2018
 
 **Tâche du jour** : PHP
