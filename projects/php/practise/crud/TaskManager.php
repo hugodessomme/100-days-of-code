@@ -30,12 +30,12 @@ class TaskManager
   public function add(Task $data)
   {
     $query = $this->db->prepare('
-      INSERT INTO practiseCRUD(taskTitle, taskCategory, taskDate)
-      VALUES(:taskTitle, :taskCategory, :taskDate)
+      INSERT INTO crud_task(taskTitle, taskDate, categoryId)
+      VALUES(:taskTitle, :taskDate, :categoryId)
     ');
     $query->bindValue(':taskTitle', $data->getTaskTitle());
-    $query->bindValue(':taskCategory', $data->getTaskCategory());
     $query->bindValue(':taskDate', $data->getTaskDate());
+    $query->bindValue(':categoryId', $data->getCategoryId());
 
     $query->execute();
   }
@@ -65,7 +65,7 @@ class TaskManager
   public function get($data)
   {
     if (is_int($data)) {
-      $query = $this->db->query('SELECT * FROM practiseCRUD WHERE id = ' . $data);
+      $query = $this->db->query('SELECT id, taskTitle, taskDate, categoryId FROM crud_task WHERE id = ' . $data);
       $output = $query->fetch(PDO::FETCH_ASSOC);
 
       return new Task($output);
@@ -79,7 +79,7 @@ class TaskManager
    */
   public function getTasks()
   {
-    $query = $this->db->query('SELECT * FROM practiseCRUD');
+    $query = $this->db->query('SELECT id, taskTitle, taskDate, categoryId FROM crud_task');
 
     $tasks = [];
 
@@ -97,12 +97,12 @@ class TaskManager
    */
   public function getCategories()
   {
-    $query = $this->db->query('SELECT taskCategory FROM practiseCRUD');
+    $query = $this->db->query('SELECT id, categoryTitle FROM crud_category');
 
     $categories = [];
 
-    while ($data = $query->fetch()) {
-      $categories[] = $data['taskCategory'];
+    while ($data = $query->fetch(PDO::FETCH_ASSOC)) {
+      $categories[] = ['id' => $data['id'], 'categoryTitle' => $data['categoryTitle']];
     }
 
     return $categories;

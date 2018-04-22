@@ -20,11 +20,11 @@
           </div>
 
           <div class="form-group">
-            <label for="create[taskCategory]"></label>
-            <select id="create[taskCategory]" name="create[taskCategory]" class="form-control">
+            <label for="create[categoryId]"></label>
+            <select id="create[categoryId]" name="create[categoryId]" class="form-control">
               <?php
               foreach ($categories as $category) {
-                echo '<option>' . $category . '</option>';
+                echo '<option value="' . $category['id'] . '">' . $category['categoryTitle'] . '</option>';
               }
               ?>
             </select>

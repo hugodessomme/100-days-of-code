@@ -5,7 +5,7 @@
     $task = new Task([
       'taskTitle' => $_POST['create']['taskTitle'],
       'taskDate' => $_POST['create']['taskDate'],
-      'taskCategory' => $_POST['create']['taskCategory']
+      'categoryId' => $_POST['create']['categoryId']
     ]);
     $manager->add($task);
   }
@@ -16,16 +16,12 @@ $tasks = $manager->getTasks();
 $categories = $manager->getCategories();
 ?>
 
-<?php
-  if (isset($msg)) {
-    echo $msg;
-  }
-?>
-
 <div class="mb-5">
   <div class="row">
     <div class="col">
-      <button class="btn btn-primary" data-toggle="modal" data-target="#modal-create">Create</button>
+      <button class="btn btn-primary" data-toggle="modal" data-target="#modal-create">
+        Create a task
+      </button>
     </div>
     <div class="col">
       <form class="form-inline justify-content-end">
@@ -33,7 +29,7 @@ $categories = $manager->getCategories();
           <select class="form-control">
             <?php
             foreach ($categories as $category) {
-              echo '<option value="' . $category . '">' . $category . '</option>';
+              echo '<option value="' . $category['id'] . '">' . $category['categoryTitle'] . '</option>';
             }
             ?>
           </select>
@@ -63,7 +59,7 @@ $categories = $manager->getCategories();
       echo '<tr>';
       echo '<td><input type="checkbox" name="' . $task->getId() . '"></td>';
       echo '<td>' . $task->getTaskTitle() . '</td>';
-      echo '<td>' . $task->getTaskCategory() . '</td>';
+      echo '<td>' . $task->getCategoryId() .'</td>';
       echo '<td>' . $task->getTaskDate() . '</td>';
       echo '<td>';
       echo '<a href="?action=add&id=' . $task->getId() . '" class="btn btn-success">Add</a>';

@@ -3,8 +3,8 @@
 class Task {
   protected $taskId;
   protected $taskTitle;
-  protected $taskCategory;
   protected $taskDate;
+  protected $categoryId;
 
   /**
    * Constructor
@@ -59,18 +59,6 @@ class Task {
   }
 
   /**
-   * Set the category
-   *
-   * @param string $data
-   */
-  public function setTaskCategory($data)
-  {
-    if (is_string($data)) {
-      $this->taskCategory = $data;
-    }
-  }
-
-  /**
    * Set the date
    *
    * @param string $data
@@ -81,6 +69,21 @@ class Task {
       $this->taskDate = $data;
     }
   }
+
+  /**
+   * Set the category
+   *
+   * @param int $data
+   */
+  public function setCategoryId($data)
+  {
+    $id = (int) $data;
+
+    if (is_int($id) && $id > 0) {
+      $this->categoryId = $id;
+    }
+  }
+
 
   /**
    * Get the ID
@@ -97,16 +100,16 @@ class Task {
   public function getTaskTitle() { return $this->taskTitle; }
 
   /**
-   * Get the category
-   *
-   * @return string
-   */
-  public function getTaskCategory() { return $this->taskCategory; }
-
-  /**
    * Get the date
    *
    * @return string
    */
   public function getTaskDate() { return $this->taskDate; }
+
+    /**
+   * Get the category
+   *
+   * @return string
+   */
+  public function getCategoryId() { return $this->categoryId; }
 }
