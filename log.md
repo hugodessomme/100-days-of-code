@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 25 : 23 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Je récupère bien le titre d'une catégorie suivant son ID qui est enregistré par instance de la classe `Task`. Je dois implémenter la fonctionnalité de suppression d'une entrée.
+
 ### Jour 24 : 22 avril 2018
 
 **Tâche du jour** : PHP
