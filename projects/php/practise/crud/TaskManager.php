@@ -75,7 +75,7 @@ class TaskManager
   /**
    * Return all tasks
    *
-   * @return Array
+   * @return array
    */
   public function getTasks()
   {
@@ -91,9 +91,27 @@ class TaskManager
   }
 
   /**
+   * Return the category title
+   *
+   * @param int
+   * @return string
+   */
+  public function getCategory($data)
+  {
+    $id = (int) $data;
+
+    if ($id > 0) {
+      $query = $this->db->query('SELECT categoryTitle FROM crud_category WHERE id = ' . $id);
+      $output = $query->fetch(PDO::FETCH_ASSOC);
+
+      return $output['categoryTitle'];
+    }
+  }
+
+  /**
    * Return all categories
    *
-   * @return Array
+   * @return array
    */
   public function getCategories()
   {

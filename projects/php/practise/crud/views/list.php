@@ -59,11 +59,12 @@ $categories = $manager->getCategories();
       echo '<tr>';
       echo '<td><input type="checkbox" name="' . $task->getId() . '"></td>';
       echo '<td>' . $task->getTaskTitle() . '</td>';
-      echo '<td>' . $task->getCategoryId() .'</td>';
+      echo '<td>' . $manager->getCategory($task->getCategoryId()) .'</td>';
       echo '<td>' . $task->getTaskDate() . '</td>';
       echo '<td>';
       echo '<a href="?action=add&id=' . $task->getId() . '" class="btn btn-success">Add</a>';
       echo '<a href="?action=delete&id="' . $task->getId() . '" class="btn btn-danger ml-1">Delete</a>';
+      echo '</td>';
       echo '</tr>';
     }
     ?>
