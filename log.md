@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 26 : 24 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai pu ajouter la fonctionnalité de suppression d'une tâche, et j'ai pu résoudre un bug qui survenait lors de la création d'une nouvelle tâche suite à la suppression d'une autre. Je pense poursuivre ma structure de code actuelle, mais je commence à voir déjà des pistes d'optimisation, et d'autres qu'il faudra que je vois avec mon entourage.
+
 ### Jour 25 : 23 avril 2018
 
 **Tâche du jour** : PHP
