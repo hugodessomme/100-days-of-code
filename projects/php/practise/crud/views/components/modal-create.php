@@ -7,7 +7,7 @@
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
-      <form action="" method="post">
+      <form action="list.php" method="post">
         <div class="modal-body">
           <div class="form-group">
             <label for="create[taskTitle]">Tâche</label>
