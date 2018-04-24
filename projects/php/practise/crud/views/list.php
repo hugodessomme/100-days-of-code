@@ -1,5 +1,6 @@
 <?php include 'structure/header.php'; ?>
 
+<?php /* Add a new task */ ?>
 <?php
   if (isset($_POST['create'])) {
     $task = new Task([
@@ -8,6 +9,15 @@
       'categoryId' => $_POST['create']['categoryId']
     ]);
     $manager->add($task);
+  }
+?>
+
+<?php /* Delete a task */ ?>
+<?php
+  if (isset($_GET['action']) && $_GET['action'] == 'delete') {
+    $deleteTask = $manager->get((int) $_GET['id']);
+
+    $manager->delete($deleteTask);
   }
 ?>
 
@@ -63,7 +73,7 @@ $categories = $manager->getCategories();
       echo '<td>' . $task->getTaskDate() . '</td>';
       echo '<td>';
       echo '<a href="?action=add&id=' . $task->getId() . '" class="btn btn-success">Add</a>';
-      echo '<a href="?action=delete&id="' . $task->getId() . '" class="btn btn-danger ml-1">Delete</a>';
+      echo '<a href="?action=delete&id=' . $task->getId() . '" class="btn btn-danger ml-1">Delete</a>';
       echo '</td>';
       echo '</tr>';
     }

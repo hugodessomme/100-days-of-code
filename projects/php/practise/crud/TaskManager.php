@@ -43,9 +43,9 @@ class TaskManager
   /**
    * Delete a task
    */
-  public function delete()
+  public function delete(Task $data)
   {
-
+    $query = $this->db->exec('DELETE FROM crud_task WHERE id = ' . $data->getId());
   }
 
   /**

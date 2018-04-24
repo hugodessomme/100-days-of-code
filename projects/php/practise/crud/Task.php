@@ -1,7 +1,7 @@
 <?php
 
 class Task {
-  protected $taskId;
+  protected $id;
   protected $taskTitle;
   protected $taskDate;
   protected $categoryId;
@@ -37,12 +37,12 @@ class Task {
    *
    * @param int $data
    */
-  public function setTaskId($data)
+  public function setId($data)
   {
     $id = (int) $data;
 
     if ($id > 0) {
-      $this->taskId = $id;
+      $this->id = $id;
     }
   }
 
@@ -90,7 +90,7 @@ class Task {
    *
    * @return int
    */
-  public function getId() { return $this->taskId; }
+  public function getId() { return $this->id; }
 
   /**
    * Get the task
