@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 27 : 25 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Pas de code pour aujourd'hui, mais j'ai lu des choses sur l'organisation MVC avec la POO, je pense appliquer cela pour mon CRUD afin de mieux le développer.
+
 ### Jour 26 : 24 avril 2018
 
 **Tâche du jour** : PHP
