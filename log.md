@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 28 : 26 avril 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Je reprends l'organisation de mon code pour respecter plutôt une structure MVC. Je me rends compte que cela demande un bon re-factoring de faire une ré-organisation de la logique du code.
+
 ### Jour 27 : 25 avril 2018
 
 **Tâche du jour** : PHP
