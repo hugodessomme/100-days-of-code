@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 29 : 14 mai 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Reprise de mon avancement, j'ai mis un peu de temps à comprendre la logique appliquée précédemment. Je pense re-simplifier le tout pour mieux avancer et ne pas ajouter tout de suite de la complexité. Lorsque je serai arrivé au bout, je pourrai optimiser tout ça.
+
 ### Jour 28 : 26 avril 2018
 
 **Tâche du jour** : PHP
