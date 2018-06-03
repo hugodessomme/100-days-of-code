@@ -1,5 +1,17 @@
 # 100 Days Of Code - Log
 
+### Jour 31 : 3 juin 2018
+
+**Tâche du jour** : Vue.js
+
+**Notes** : J'ai débuté mon apprentissage sur cet outil que j'ai terminé en réalisant une liste de tâches basique dynamique où l'on peut changer le statut (complétée ou non) d'une tâche.
+
+### Jour 30 : 17 mai 2018
+
+**Tâche du jour** : Grav
+
+**Notes** : J'alterne désormais le PHP avec le CMS Grav que je voulais voir depuis un moment. Malgré une documentation fournie, je tâtonne trop pour comprendre comment développer dessus mais j'ai pu trouver une source de tutos que je vais suivre la prochaine fois.
+
 ### Jour 29 : 14 mai 2018
 
 **Tâche du jour** : PHP
