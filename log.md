@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 32 : 4 juin 2018
+
+**Tâche du jour** : Vue.js
+
+**Notes** : J'ai pu développer de vrais composants (message, modal, tabs) que je peux reprendre pour d'autres projets. Je pense refaire seul les 3 composants pour m'entraîner, en sachant que le composant de tabs est celui qui fait intervenir le plus de concepts propres à Vue.js.
+
 ### Jour 31 : 3 juin 2018
 
 **Tâche du jour** : Vue.js
