@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 33 : 5 juin 2018
+
+**Tâche du jour** : Vue.js
+
+**Notes** : Comme prévu hier, j'ai pu faire par moi-même 2 composants : messages et modal. Pour celui de la modal, j'ai du re-vérifier un point avec la correction, mais j'ai assimilé les concepts de base.
+
 ### Jour 32 : 4 juin 2018
 
 **Tâche du jour** : Vue.js
