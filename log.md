@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 34 : 10 juin 2018
+
+**Tâche du jour** : Vue.js
+
+**Notes** : Même si je ne l'ai pas noté, j'ai poursuivi mon apprentissage de Vue.js avec la doc officielle. J'en ai appris davantage sur les computed properties, watchers, et la syntaxe du templating.
+
 ### Jour 33 : 5 juin 2018
 
 **Tâche du jour** : Vue.js
