@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 35 : 11 juin 2018
+
+**Tâche du jour** : Vue.js
+
+**Notes** : J'ai pu voir la manipulation des tableaux / objets avec Vue.js en réalisant une simple to-do d'ajout et de suppression des tâches. Je dois encore voir `$emit` pour déclencher des événements.
+
 ### Jour 34 : 10 juin 2018
 
 **Tâche du jour** : Vue.js
