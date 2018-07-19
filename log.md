@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 36 : 18 juillet 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Pour ne pas stagner, j'ai acheté une formation Udemy sur la POO / MVC pour mieux structurer mes applications. J'ai débuté cette formation qui présentait les objectifs, un refresher sur la POO et ce qu'était le MVC.
+
 ### Jour 35 : 11 juin 2018
 
 **Tâche du jour** : Vue.js
