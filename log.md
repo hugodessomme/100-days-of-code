@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 37 : 20 juillet 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai poursuivi la formation, j'ai bien assimilé les premiers concepts d'architecture MVC et j'ai pu reproduire cela de mon côté.
+
 ### Jour 36 : 18 juillet 2018
 
 **Tâche du jour** : PHP
