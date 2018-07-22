@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 38 : 22 juillet 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai terminé de visionner la 1ère partie de développement du framework MVC de la formation. Je dois tenter de reproduire par moi-même ce qu'on a vu pour ensuite entamer la seconde section qui sera dédié au développement d'une application basée sur notre framework.
+
 ### Jour 37 : 20 juillet 2018
 
 **Tâche du jour** : PHP
