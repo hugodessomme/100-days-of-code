@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 41 : 25 juillet 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Nous avons ajouté la vérification d'email déjà existant dans la BDD à la création d'un compte.
+
 ### Jour 40 : 24 juillet 2018
 
 **Tâche du jour** : PHP
