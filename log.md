@@ -1,5 +1,17 @@
 # 100 Days Of Code - Log
 
+### Jour 40 : 24 juillet 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Après avoir suivi le fonctionnement de validation du formulaire d'inscription, j'ai pu reproduire cela de mon côté.
+
+### Jour 39 : 23 juillet 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Comme prévu hier, j'ai répliqué ce qu'on a vu dans la formation, et je pense avoir bien saisi l'intérêt de bien découper son code pour avoir des classes les plus génériques possibles.
+
 ### Jour 38 : 22 juillet 2018
 
 **Tâche du jour** : PHP
