@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 42 : 8 août 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : Nous avons crée un nouvel helper pour afficher des messages de notifications lorsqu'un formulaire est soumis.
+
 ### Jour 41 : 25 juillet 2018
 
 **Tâche du jour** : PHP
