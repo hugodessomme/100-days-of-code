@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 43 : 9 août 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : J'ai finalisé la connexion / déconnexion / inscription d'un utilisateur, nous allons passer au CRUD de l'application.
+
 ### Jour 42 : 8 août 2018
 
 **Tâche du jour** : PHP
