@@ -1,10 +1,16 @@
 # 100 Days Of Code - Log
 
+### Jour 45 : 7 octobre 2018
+
+**Tâche du jour** : PHP
+
+**Notes** : [(tuto)](https://www.youtube.com/watch?v=c_hNNAdyfQk&list=PLfdtiltiRHWF5Rhuk7k4UAU1_yLAZzhWc) Ajout de méthodes dédiées au CRUD de l'application
+
 ### Jour 44 : 6 octobre 2018
 
 **Tâche du jour** : PHP
 
-**Notes** : [Tuto](https://www.youtube.com/watch?v=c_hNNAdyfQk&list=PLfdtiltiRHWF5Rhuk7k4UAU1_yLAZzhWc) : Mise en place de l'architecture, création de la classe de gestion de la base de données
+**Notes** : [(tuto)](https://www.youtube.com/watch?v=c_hNNAdyfQk&list=PLfdtiltiRHWF5Rhuk7k4UAU1_yLAZzhWc) Mise en place de l'architecture, création de la classe de gestion de la base de données
 
 ### Jour 43 : 9 août 2018
 
