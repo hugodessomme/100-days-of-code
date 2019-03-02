@@ -4,7 +4,7 @@
 
 **Repo** : Local
 
-**Technos / outils**: Symfony
+**Technos / outils** : Symfony
 
 **Notes** : 3ème fois que je recommence ce challenge, cette fois-ci est la bonne !
 
