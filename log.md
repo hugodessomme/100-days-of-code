@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 8 : 12/03/2019
+
+**Repo** : [fake-bnb](https://github.com/hugodessomme/fake-bnb)
+
+**Technos / outils** : Symfony
+
+**Notes** : Forms
+
 ### Jour 7 : 11/03/2019
 
 **Repo** : [sandbox-symfony](https://github.com/hugodessomme/sandbox-symfony), [fake-bnb](https://github.com/hugodessomme/fake-bnb)
