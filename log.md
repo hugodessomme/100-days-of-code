@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 9 : 13/03/2019
+
+**Repo** : [todo-app](https://github.com/hugodessomme/todo-app)
+
+**Technos / outils** : PHP
+
+**Notes** : Refactoring
+
 ### Jour 8 : 12/03/2019
 
 **Repo** : [fake-bnb](https://github.com/hugodessomme/fake-bnb)
