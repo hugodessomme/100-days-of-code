@@ -1,5 +1,9 @@
 # 100 Days Of Code - Log
 
+### Jour 10 : 14/03/2019
+
+**Notes** : Algorithms
+
 ### Jour 9 : 13/03/2019
 
 **Repo** : [todo-app](https://github.com/hugodessomme/todo-app)
