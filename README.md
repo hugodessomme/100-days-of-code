@@ -6,6 +6,6 @@
 
 ## Contenus
 * [Règles](rules.md)
-* [Log - cliquez ici pour voir ma progression](log.md)
+* [Logs - cliquez ici pour voir ma progression](log.md)
 * [FAQ](FAQ.md)
 * [Ressources](resources.md)
