@@ -1,8 +1,16 @@
 # 100 Days Of Code - Log
 
+### Jour 18 : 24/03/2019
+
+**Repo** : [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs), [todo-app](https://github.com/hugodessomme/todo-app)
+
+**Technos / outils** : ReactJS, PHP
+
+**Notes** : ReactJS Basics, To Do App Authentification
+
 ### Jour 17 : 23/03/2019
 
-**Repo** : [sandbox-api](https://github.com/hugodessomme/sandbox-reactjs)
+**Repo** : [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
 
 **Technos / outils** : ReactJS
 
