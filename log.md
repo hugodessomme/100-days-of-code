@@ -6,7 +6,7 @@
 
 **Technos / outils** : Symfony
 
-**Notes** : Authentication
+**Notes** : Authentication, roles, forms
 
 ### Jour 20 : 26/03/2019
 
