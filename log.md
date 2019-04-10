@@ -1,12 +1,20 @@
 # 100 Days Of Code - Log
 
-### Jour 24 : 08/04/2019
+### Jour 26 : 10/04/2019
 
 **Repo** : [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
 
 **Technos / outils** : ReactJS
 
-**Notes** : Did everything again
+**Notes** : Debug, refactor
+
+### Jour 25 : 09/04/2019
+
+**Repo** : [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
+
+**Technos / outils** : ReactJS
+
+**Notes** : CSS Modules
 
 ### Jour 23 : 06/04/2019
 
