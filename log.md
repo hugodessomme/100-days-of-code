@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 27 : 22/04/2019
+
+**Technos / outils** : ES6
+
+**Notes** : Variables, arrow functions, template strings, destructuring, iterables / looping 
+
 ### Jour 26 : 10/04/2019
 
 **Repo** : [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
