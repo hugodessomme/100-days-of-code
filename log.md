@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 28 : 27/04/2019
+
+**Technos / outils** : ES6 / ReactJS
+
+**Notes** : Arrays, spread / rest operators, promises, symbols 
+
 ### Jour 27 : 22/04/2019
 
 **Technos / outils** : ES6
