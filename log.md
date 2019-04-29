@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 29 : 28/04/2019
+
+**Technos / outils** : ES6 / ReactJS
+
+**Notes** : ESLint, Webpack, modules
+
 ### Jour 28 : 27/04/2019
 
 **Technos / outils** : ES6 / ReactJS
