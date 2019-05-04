@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 31 : 04/05/2019
+
+**Repo**: [sandbox-typescript](https://github.com/hugodessomme/sandbox-typescript)
+
+**Technos / outils** : TypeScript
+
+**Notes** : Types, ES6
+
 ### Jour 30 : 01/05/2019
 
 **Technos / outils** : ReactJS
