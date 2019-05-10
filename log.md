@@ -1,12 +1,20 @@
 # 100 Days Of Code - Log
 
+### Jour 33 : 09/05/2019
+
+**Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
+
+**Technos / outils** : ReactJS
+
+**Notes** : Basics again
+
 ### Jour 32 : 07/05/2019
 
 **Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
 
 **Technos / outils** : ReactJS
 
-**Notes** : Lifecycle and Recat hooks
+**Notes** : Lifecycle and React hooks
 
 ### Jour 31 : 04/05/2019
 
@@ -32,13 +40,13 @@
 
 **Technos / outils** : ES6 / ReactJS
 
-**Notes** : Arrays, spread / rest operators, promises, symbols 
+**Notes** : Arrays, spread / rest operators, promises, symbols
 
 ### Jour 27 : 22/04/2019
 
 **Technos / outils** : ES6
 
-**Notes** : Variables, arrow functions, template strings, destructuring, iterables / looping 
+**Notes** : Variables, arrow functions, template strings, destructuring, iterables / looping
 
 ### Jour 26 : 10/04/2019
 
@@ -232,10 +240,9 @@
 
 **Notes** : 3ème fois que je recommence ce challenge, cette fois-ci est la bonne !
 
-Suivi de la documentation officielle pour prendre en main le framework : 
+Suivi de la documentation officielle pour prendre en main le framework :
 
-* Installation
-* Création de pages (routes, controllers)
-* Routing
-* Controllers
-
+- Installation
+- Création de pages (routes, controllers)
+- Routing
+- Controllers
