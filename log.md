@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 34 : 10/05/2019
+
+**Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
+
+**Technos / outils** : ReactJS
+
+**Notes** : Built a movie list app with API and localStorage
+
 ### Jour 33 : 09/05/2019
 
 **Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
