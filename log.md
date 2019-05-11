@@ -1,8 +1,12 @@
 # 100 Days Of Code - Log
 
-### Jour 34 : 10/05/2019
+### Jour 35 : 11/05/2019
 
-**Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
+**Technos / outils** : ReactJS
+
+**Notes** : Built a todo app with simple CRUD + filtered search
+
+### Jour 34 : 10/05/2019
 
 **Technos / outils** : ReactJS
 
@@ -10,15 +14,11 @@
 
 ### Jour 33 : 09/05/2019
 
-**Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
-
 **Technos / outils** : ReactJS
 
 **Notes** : Basics again
 
 ### Jour 32 : 07/05/2019
-
-**Repo**: [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
 
 **Technos / outils** : ReactJS
 
