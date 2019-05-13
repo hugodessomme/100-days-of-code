@@ -1,5 +1,17 @@
 # 100 Days Of Code - Log
 
+### Jour 37 : 13/05/2019
+
+**Technos / outils** : ReactJS
+
+**Notes** : Started a Twitter clone
+
+### Jour 36 : 12/05/2019
+
+**Technos / outils** : ReactJS
+
+**Notes** : Styled Components
+
 ### Jour 35 : 11/05/2019
 
 **Technos / outils** : ReactJS
