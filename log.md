@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 38 : 14/05/2019
+
+**Technos / outils** : ReactJS
+
+**Notes** : Added features to my Twitter clone (add / delete, router, architecture)
+
 ### Jour 37 : 13/05/2019
 
 **Technos / outils** : ReactJS
