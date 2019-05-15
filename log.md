@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 39 : 15/05/2019
+
+**Technos / outils** : ReactJS
+
+**Notes** : Finished a React course
+
 ### Jour 38 : 14/05/2019
 
 **Technos / outils** : ReactJS
