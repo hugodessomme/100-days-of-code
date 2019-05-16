@@ -1,5 +1,13 @@
 # 100 Days Of Code - Log
 
+### Jour 40 : 16/05/2019
+
+**Repo** : [sandbox-reactjs](https://github.com/hugodessomme/sandbox-reactjs)
+
+**Technos / outils** : ReactJS
+
+**Notes** : Basic of redux, many React features (lifecycle, hooks, context API, etc.)
+
 ### Jour 39 : 15/05/2019
 
 **Technos / outils** : ReactJS
