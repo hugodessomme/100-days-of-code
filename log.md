@@ -2,7 +2,7 @@
 
 ### Jour 41 : 18/05/2019
 
-**Repo** : [sandbox-reactjs](https://github.com/hugodessomme/burger-reactjs)
+**Repo** : [burger-reactjs](https://github.com/hugodessomme/burger-reactjs)
 
 **Technos / outils** : ReactJS
 
