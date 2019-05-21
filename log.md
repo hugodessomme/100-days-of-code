@@ -6,7 +6,7 @@
 
 **Technos / outils** : ReactJS
 
-**Notes** : Routing, form
+**Notes** : Routing, form, fetching data
 
 ### Jour 41 : 18/05/2019
 
