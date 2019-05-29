@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 46 : 29/05/2019
+
+**Technos / outils** : ReactJS
+
+**Notes** : Redux
+
 ### Jour 45 : 22/05/2019
 
 **Repo** : [burger-reactjs](https://github.com/hugodessomme/burger-reactjs)
