@@ -1,5 +1,11 @@
 # 100 Days Of Code - Log
 
+### Jour 47, 48, 49 : 30-31-01/05-06/2019
+
+**Technos / outils** : ReactJS
+
+**Notes** : Redux
+
 ### Jour 46 : 29/05/2019
 
 **Technos / outils** : ReactJS
